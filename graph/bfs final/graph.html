@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./resreq.css">
+    <!-- Title of the page -->
+    <title>GRAPH ALGORITHM</title>
+  
+  </head>
+  <body id="body" style="background-color:black;">
+  <!--BUTTON CODE <- AND ->-->
+<div class="nextprev">
+<ul>
+	<li class="prev"><a href="file:///C:/final/Algorithm-final/7GRAPH/algorithm.html"><span><a href="file:///C:/final/Algorithm-final/7GRAPH/algorithm.html"></a></span></li>
+	<li class="next"><a href="file:///C:/final/graph/dfs%20final/resreq.html"><span><a href="file:///C:/final/graph/dfs%20final/resreq.html"></a></span></li> 
+</ul>
+</div>
+<!--BUTTON CODE <- AND ->-->
+    <!-- Background Animation Starts -->
+    
+    <!-- Background Animation Ends -->
+
+    <!-- Main Algo Implementation Starts -->
+    <div class="container pt-5">
+      <h2 class="text-center subheading" style="color:white;">BREADTH FIRST SEARCH</h2>
+    </div>
+    <div class="container">
+      <div class="row p-2 pt-5">
+        <!-- Total Instance Form Starts -->
+        <div class="col-4 text-center">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1" style="color:white;">NUMBER OF VERTEX</span>
+            </div>
+            <input type="text" size="2" maxlength="2" class="form-control" id="resourceA"  onfocusout="return checkValue()"onkeypress="return onlyNumberKeySpace(event)" onkeypress="return onlyNumberKey(evt)"required>
+          </div> 
+        </div>
+        <div class="col-4 text-center">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1" style="color:white;">SOURCE VERTEX</span>
+            </div>
+            <input type="text" size="2" maxlength="2" class="form-control" id="resourceB"  onkeypress="return onlyNumberKeySpace(event)" onkeypress="return onlyNumberKey(evt)"required>
+          </div> 
+        </div>
+        
+    <div class="container pt-5">
+      <div class="row">
+        <!-- Allocation Form Starts -->
+        <div class="col-3 text-center">
+          <table class="text-center">
+            <thead>
+              <tr>
+                <th colspan="4" style="color:white;"><h4>ADJGENCEY MATRIX</h4></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td id="v1" style="color:white;">V1</td>
+                <td id="v2" style="color:white;">V2</td>
+                <td id="v3" style="color:white;">V3</td>
+		<td id="v4" style="color:white;">V4</td>
+		<td id="v5" style="color:white;">V5</td>
+              </tr>
+              <tr>
+                <td id="c1" style="color:white;">V1</td>
+                <td><input size="2" maxlength="2" id="a11" onkeypress="return onlyNumberKeySpace(event)" onkeypress="return onlyNumberKey(evt)"></td>
+                <td><input size="2" maxlength="2" id="a12"onkeypress="return onlyNumberKeySpace(event)" onkeypress="return onlyNumberKey(evt)"></td>
+                <td><input size="2" maxlength="2" id="a13"onkeypress="return onlyNumberKeySpace(event)" onkeypress="return onlyNumberKey(evt)"></td>
+		<td><input size="2" maxlength="2" id="a14"onkeypress="return onlyNumberKeySpace(event)" onkeypress="return onlyNumberKey(evt)"></td>
+		<td><input size="2" maxlength="2" id="a15"onkeypress="return onlyNumberKeySpace(event)" onkeypress="return onlyNumberKey(evt)"></td>
+              </tr>
+              <tr>
+                <td id="c2" style="color:white;">V2</td>
+                <td><input size="2" maxlength="2" id="a21"onkeypress="return onlyNumberKeySpace(event)" onkeypress="return onlyNumberKey(evt)"></td>
+                <td><input size="2" maxlength="2" id="a22"onkeypress="return onlyNumberKeySpace(event)" onkeypress="return onlyNumberKey(evt)"></td>
+                <td><input size="2" maxlength="2" id="a23"onkeypress="return onlyNumberKeySpace(event)" onkeypress="return onlyNumberKey(evt)"></td>
+		<td><input size="2" maxlength="2" id="a24"onkeypress="return onlyNumberKeySpace(event)" onkeypress="return onlyNumberKey(evt)"></td>
+                <td><input size="2" maxlength="2" id="a25"onkeypress="return onlyNumberKeySpace(event)" onkeypress="return onlyNumberKey(evt)"></td>
+              </tr>
+              <tr>
+                <td id="c3" style="color:white;">V3</td>
+                <td><input size="2" maxlength="2" id="a31"onkeypress="return onlyNumberKeySpace(event)" onkeypress="return onlyNumberKey(evt)"></td>
+                <td><input size="2" maxlength="2" id="a32"onkeypress="return onlyNumberKeySpace(event)" onkeypress="return onlyNumberKey(evt)"></td>
+                <td><input size="2" maxlength="2" id="a33"onkeypress="return onlyNumberKeySpace(event)" onkeypress="return onlyNumberKey(evt)"></td>
+		<td><input size="2" maxlength="2" id="a34"onkeypress="return onlyNumberKeySpace(event)" onkeypress="return onlyNumberKey(evt)"></td>
+                <td><input size="2" maxlength="2" id="a35"onkeypress="return onlyNumberKeySpace(event)" onkeypress="return onlyNumberKey(evt)"></td>
+              </tr>
+              <tr>
+                <td id="c4" style="color:white;">V4</td>
+                <td><input size="2" maxlength="2" id="a41"onkeypress="return onlyNumberKeySpace(event)" onkeypress="return onlyNumberKey(evt)"></td>
+                <td><input size="2" maxlength="2" id="a42"onkeypress="return onlyNumberKeySpace(event)" onkeypress="return onlyNumberKey(evt)"></td>
+                <td><input size="2" maxlength="2" id="a43"onkeypress="return onlyNumberKeySpace(event)" onkeypress="return onlyNumberKey(evt)"></td>
+		 <td><input size="2" maxlength="2" id="a44"onkeypress="return onlyNumberKeySpace(event)" onkeypress="return onlyNumberKey(evt)"></td>
+                <td><input size="2" maxlength="2" id="a45"onkeypress="return onlyNumberKeySpace(event)" onkeypress="return onlyNumberKey(evt)"></td>
+              </tr>
+              <tr>
+                <td id="c5" style="color:white;">V5</td>
+                <td><input size="2" maxlength="2" id="a51"onkeypress="return onlyNumberKeySpace(event)" onkeypress="return onlyNumberKey(evt)"></td>
+                <td><input size="2" maxlength="2" id="a52"onkeypress="return onlyNumberKeySpace(event)" onkeypress="return onlyNumberKey(evt)"></td>
+                <td><input size="2" maxlength="2" id="a53"onkeypress="return onlyNumberKeySpace(event)" onkeypress="return onlyNumberKey(evt)"></td>
+		 <td><input size="2" maxlength="2" id="a54"onkeypress="return onlyNumberKeySpace(event)" onkeypress="return onlyNumberKey(evt)"></td>
+                <td><input size="2" maxlength="2" id="a55"onkeypress="return onlyNumberKeySpace(event)" onkeypress="return onlyNumberKey(evt)"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+  </div>
+        <!-- Allocation Form Ends -->
+
+        
+
+      <!-- Algo Buttons Starts -->
+      <div class="row m-5 text-center">
+        <div class="col-2">
+          <a href="#" class="btn btn-secondary" onclick="example1()">Example1</a>
+        </div>
+	<div class="col-2">
+          <a href="#" class="btn btn-secondary" onclick="example2()">Example2</a>
+        </div>
+	<div class="col-2">
+          <a href="#" class="btn btn-secondary" onclick="create_graph()">create graph</a>
+        </div>
+        <div class="col-2">
+          <a href="#" class="btn btn-secondary" onclick="run_algo()">Run Algorithm</a>
+        </div>
+        <div class="col-2">
+          <a href="#" class="btn btn-secondary" onclick="reset()">Reset Values</a>
+        </div>
+	 <div class="col-2">
+          <a href="#" class="btn btn-secondary" onclick="TimeComplexity()">Time Complexity</a>
+        </div>
+	<div class="col-2">
+          <a href="#" class="btn btn-secondary" onclick="SpaceComplexity()">Space Complexity</a>
+        </div>
+      </div>
+      <!-- Algo Buttons Ends -->
+      
+      <!-- Process Sequence Starts -->
+      <div class="row p-3 mt-3 mb-3">
+        <div class="col-6 offset-4">
+          <h4 style="color:white;">Vertex Sequence :</h4><br>
+          <input id="p1" size="2" maxlength="2"/>&nbsp
+          <input id="p2" size="2" maxlength="2"/>&nbsp
+          <input id="p3" size="2" maxlength="2"/>&nbsp
+          <input id="p4" size="2" maxlength="2"/>&nbsp
+          <input id="p5" size="2" maxlength="2"/>
+        </div>
+      </div>
+      <!-- Process Sequence Ends -->
+    </div>
+   <br> <div id="text1"style="color:white;"></div>
+<br><div id="text2" style="color:white;"></div>
+<br><div id="text3"style="color:white;"></div>
+<br><div id="text4"style="color:white;"></div>
+<script>
+function onlyNumberKey(evt) {
+              
+            // Only ASCII character in that range allowed
+            var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+            if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+                return false;
+            return true;
+        }
+    </script>
+	
+<script>
+        function onlyNumberKeySpace(evt) {
+              
+            // Only ASCII character in that range allowed
+            var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+            if (ASCIICode != 32 && (ASCIICode < 48 || ASCIICode > 57) )
+                return false;
+            return true;
+        }
+</script>
+
+
+
+</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- Custom JavaScript -->
+    <script src="./resreq.js"></script>
+  </body>
+</html>

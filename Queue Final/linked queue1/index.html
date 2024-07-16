@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+		<link rel="icon" href="img/pointer.png"/>
+
+		<link rel="stylesheet" href="vendor/css/normalize.css" />
+		<link rel="stylesheet" href="vendor/css/fontawesome.css" />
+
+		
+
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/responisve.css" />
+		<title>Linked queue Visualization</title>
+	</head>
+	
+	<body>
+	<!--BUTTON CODE <- AND ->-->
+<div class="nextprev">
+<ul>
+	<!--<li class="prev"><a href="file:///C:/final/AA-Home/statpage.html"><span><a href="file:///C:/final/AA-Home/statpage.html"></a></span></li>-->
+	<li class="prev"><a href="file:///C:/final/Algorithm-final/5QUEUE/algorithm.html"><span><a href="file:///C:/final/Algorithm-final/5QUEUE/algorithm.html"></a></span></li>
+	
+	<li class="next"><a href="file:///C:/final/Queue%20Final/cq/index.html"><span><a href="file:///C:/final/Queue%20Final/cq/index.html"></a></span></li> 
+</ul>
+</div>
+<!--BUTTON CODE <- AND ->-->
+<br />
+		<section class="head">LINKED QUEUE</section>
+		
+
+		<main>
+			<section class="list" id="list"></section>
+
+			<section class="errors">
+				<div class="error-message">
+					<p id="error"></p>
+				</div>
+			</section>
+
+			<section class="operations">
+				<div class="wrapper">
+					<div>
+						<button class="button" id="add-btn">INSERT</button>
+						<input type="number" id="fname1" name="fname1" class="fname1" placeholder="Data" required autofocus/>
+						
+					</div>
+					<div>
+						<button class="button" id="add-btn3">DELETE</button>
+					</div>
+					<div>
+					<button class="button" style="height:50px;" onclick="reset()">Reset</button>
+					</div>
+					<div>
+					<button class="button" style="height:50px;"
+					onclick="TimeComplexity()"
+					id="Button4" >TimeComplexity</button>
+					</div>
+					<div>
+					<button class="button" style="height:50px;"
+					onclick="SpaceComplexity()"
+					id="Button5" >
+					SpaceComplexity</button>
+					</div>
+					<div class="info"><br>
+						<div class="sec1" style="color:#0492C2;">
+							<h3>Top of the Queue:-</h3>
+						<button class="box" style="width:100px;height:30px;position:absolute;top:150px;left:700px;color:white;background:linear-gradient(-125deg,  #0067ff, #8900e8);"></button>
+					</div><br>
+					<div class="sec2" style="color:#0492C2;">
+						<h3>Last Inserted Item:-</h3>
+							<button class="box" style="width:100px;height:30px;position:absolute;top:230px;left:700px;color:white;background:linear-gradient(-125deg,  #0067ff, #8900e8);"></button>
+					</div><br>
+					<div class="sec3" style="color:#0492C2;">
+						<h3>Last Deleted Item:-</h3>
+						<button class="box" style="width:100px;height:30px;position:absolute;top:310px;left:700px;color:white;background:linear-gradient(-125deg,  #0067ff, #8900e8);"></button>
+					</div>
+					
+					</div>
+				
+			</section>
+				
+		</main>
+		<div id="text1" style="text-align:right;color:#0492C2;font-size:30px;padding-top:200px;padding-right:20px;"></div>
+		<div id="text2" style="text-align:right;color:#0492C2;font-size:30px;padding-right:20px;"></div>
+		<div id="text3" style="text-align:right;color:#0492C2;font-size:30px;padding-right:20px;"></div>
+		<div id="text4" style="text-align:right;color:#0492C2;font-size:30px;padding-right:20px;"></div>
+		<script src="vendor/js/fontawesome.js"></script>
+		<script src="js/LinkedList.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/theme.js"></script>
+		<script src="js/settings.js"></script>
+	</body>
+</html>

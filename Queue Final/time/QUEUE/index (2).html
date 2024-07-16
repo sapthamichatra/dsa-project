@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<title>QUEUE</title>
+	<link rel="stylesheet" href="style1.css">
+</head>
+
+<body style="background-color:#C8A2C9;">
+	<!-- heading -->
+	<!--BUTTON CODE <- AND ->-->
+<div class="nextprev">
+<ul>
+	<!--<li class="prev"><a href="file:///C:/final/AA-Home/statpage.html"><span><a href="file:///C:/final/AA-Home/statpage.html"></a></span></li>-->
+	<li class="prev"><a href="file:///C:/final/Algorithm-final/5QUEUE/algorithm.html"><span><a href="file:///C:/final/Algorithm-final/5QUEUE/algorithm.html"></a></span></li>
+	<li class="next"><a href="file:///C:/final/Queue%20Final/linked%20queue1/index.html"><span><a href="file:///C:/final/Queue%20Final/linked%20queue1/index.html"></a></span></li> 
+</ul>
+</div>
+<!--BUTTON CODE <- AND ->-->
+	<header>
+		<h1 class="heading">QUEUE OPERATION</h1>
+		
+	</header>
+
+	<div class="container">
+		<div class="container-header">
+			<input type="number" id="fname1" name="fname1" class="text" style="background-color: #BF92E4;"required>
+			<button class="push">Insert</button>
+			<button class="pop ">Delete</button>
+			<button class="reset">Reset</button>
+			<button class="btn4"
+				onclick="TimeComplexity()"
+				id="Button4" >
+				TimeComplexity</button>
+			<button class="btn5"
+				onclick="SpaceComplexity()"
+				id="Button5" >
+				SpaceComplexity</button>
+		</div>
+		<div id="text1" style="text-align:right;color:#4B0076;font-size:30px;"></div>
+		<div id="text2" style="text-align:right;color:#4B0076;font-size:30px;"></div>
+		<div id="text3" style="text-align:right;color:#4B0076;font-size:30px;"></div>
+		<div id="text4" style="text-align:right;color:#4B0076;font-size:30px;"></div>
+
+		<div class="container-body">
+			<div class="stack">
+				<div class="main-stack-bucket"></div>
+			</div>
+
+			<div class="info">
+				<div class="sec1">
+					<h3>Top of the Queue:-</h3>
+					<button class="box"></button>
+				</div>
+				<div class="sec2">
+					<h3>Last inserted Item:-</h3>
+					<button class="box"></button>
+				</div>
+				<div class="sec3">
+					<h3>Last deleted Item:-</h3>
+					<button class="box"></button>
+				</div>
+				<div class="sec3">
+					<h3>Size of the Queue:-</h3>
+					<button class="box">5</button>
+				</div>
+
+				<div class="massage-box">
+					<h2>Message Box</h2>
+					<div class="massage"></div>
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+	
+	<!-- script -->
+	<script src="./queue.js"></script>
+	
+</body>
+<!-- script -->
+	<script src="./queue.js"></script>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Array</title>
+<link rel="stylesheet" type="text/css" href="algorithm.css">
+</head>
+<body>
+<!--BUTTON CODE <- AND ->-->
+<div class="nextprev">
+<ul>
+	<li class="prev"><a href="file:///C:/final/AA-Home/statpage.html"><span><a href="file:///C:/final/AA-Home/statpage.html"></a></span></li>
+	<li class="next"><a href="file:///C:/final/Algorithm-final/3SEARCH/algorithm.html"><span><a href="file:///C:/final/Algorithm-final/3SEARCH/algorithm.html"></a></span></li> 
+	
+	
+	
+</ul>
+</div>
+<!--BUTTON CODE <- AND ->-->
+<div class="wrapper">
+	<div class="wrapper_left">
+		<ul>
+			<li data-li="linear"class="active">
+				<p>Array Operation( Insertion )</p>
+			</li>
+			<li data-li="binary">
+				<p>Array Operation( Deletion )</p>
+			</li>
+		
+			
+		</ul>
+	</div>
+	<div class="wrapper_right">
+		
+		 <div class="container">
+			<div class="item linear">
+			
+			<div class="title"><p>Array Operation</p> Insertion </div>
+				<div class="item_info">
+					<div class="img"></div>
+					
+					<button type="button"onclick="location.href='file:///C:/final/Array%20Operation/INSERT/index.html'">
+					let's Visualize</button>
+				</div>
+				
+			<pre>	<p>Step 1: [Initialize counter] set J = N</p></pre>
+			<pre>	<p>Step 2: Repeat Step 3  and 4 WHILE J <= K</p></pre>
+			<pre>	<p>Step 3: [move Jth element downword]</p></pre>
+			<pre>	<p>		   set LA[ J + 1] = LA[ J ]</p></pre>
+			<pre>	<p>Step 4: [Decrease counter]</p></pre>
+			<pre>	<p>		   set J = J - 1</p></pre>
+			<pre>	<p>			[end of step 2  loop]</p></pre>
+			<pre>	<p>Step 5: [insert element]</p></pre>
+			<pre>	<p>		   set LA[ K ]= ITEM</p></pre>			
+			<pre>	<p>Step 6: [reset N]</p></pre>	
+			<pre>	<p>		   set N = N + 1</p></pre>
+			<pre>	<p>Step 7: Exit</p></pre>	
+			<pre> <p>a.	Input: Array of numbers, number to be inserted, position of inserted number.</pre></p>
+<pre><p>b.	Process: This operation takes the array of numbers and checks the position in the linear order 
+then inserts the specified element at specified position.</pre></p>
+<pre><p>c.	Output: Displays the array with inserted element using bar graph also calculates 
+the time and space complexity.</pre></p>
+
+			</div>
+			<div class="item binary" style="display:none;">
+			
+			<div class="title"><p>Array Operation</p> Deletion </div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/Array%20Operation/DELETE/index.html'">
+					let's Visualize</button>
+				</div>
+				
+			<pre>	<p>Step 1: set ITEM = LA[ K ]</p></pre>
+			<pre>	<p>Step 2: Repeat FOR J = K to N - 1</p></pre>
+			<pre>	<p>			[ move J + 1st element upwords] </p></pre>
+			<pre>	<p>			set LA[ J ] = LA[ J + 1]</p> </pre>
+			<pre>	<p>			[ end of loop]</p></pre>
+			<pre>	<p>Step 3: [reset the number N of element in LA]</p></pre>
+			<pre>	<p>			set N = N - 1</p></pre>
+			
+			<pre>	<p>Step 4: Exit</p></pre>	
+			<pre><p>a.	Input: Array of numbers, number to be deleted.</pre></p>
+<pre><p>b.	Process: This operations takes the array of numbers and checks in the 
+linear order then deletes the specified element.</pre></p>
+<pre><p>c.	Output: Displays the final bar graph excluding the deleted element and 
+then displays the position of the element deleted also calculates the time and space complexity.</pre></p>
+
+			</div>
+			
+			
+			
+			
+		 </div>
+	</div>
+</div>
+
+
+<script src="algorithm.js"></script>
+</body>
+</html>

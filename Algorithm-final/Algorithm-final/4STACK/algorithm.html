@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Stack</title>
+<link rel="stylesheet" type="text/css" href="algorithm.css">
+</head>
+<body>
+<!--BUTTON CODE <- AND ->-->
+<div class="nextprev">
+<ul>
+	<li class="prev"><a href="file:///C:/final/AA-Home/statpage.html"><span><a href="file:///C:/final/AA-Home/statpage.html"></a></span></li>
+	<li class="next"><a href="file:///C:/final/Algorithm-final/5QUEUE/algorithm.html"><span><a href="file:///C:/final/Algorithm-final/5QUEUE/algorithm.html"></a></span></li> 
+</ul>
+</div>
+<!--BUTTON CODE <- AND ->-->
+<div class="wrapper">
+	<div class="wrapper_left">
+		<ul>
+			<li data-li="push"class="active">
+				<p>Array Representation of Stack (PUSH) </p>
+			</li>
+			<li data-li="pop">
+				<p>Array Representation of Stack (POP)</p>
+			</li>
+			<li data-li="push1">
+				<p>Linedlist Representation of Stack (PUSH)</p>
+			</li>
+			<li data-li="pop1">
+				<p>Linedlist Representation of Stack (POPS)</p>
+			</li>
+						
+		</ul>
+	</div>
+	<div class="wrapper_right">
+		
+		 <div class="container">
+			<div class="item push">
+			<div class="title"><p>Stack</p>Array Representation of Stack( PUSH )</div>
+				<div class="item_info">
+					<div class="img"></div>
+					
+					<button type="button"onclick="location.href='file:///C:/final/Stack%20final/STACK/index.html'">
+					PUSH</button>
+				</div>
+			<pre>	<p>Step 1: [Stack already filled?]</p></pre>
+			<pre>	<p>			IF TOP = MAXSTK ,then </p></pre>
+			<pre>	<p>			Print:"Stack overflow" and Return</p></pre>
+			<pre>	<p>Step 2: Set TOP = TOP + 1</p></pre>
+			<pre>	<p>Step 3: STACK[TOP]=ITEM</p></pre>
+			<pre>	<p>Step 4: Return</p></pre>
+				
+			</div>
+			<div class="item pop" style="display:none;">
+			<div class="title"><p>Stack</p>Array Representation of Stack( POP )</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/Stack%20final/STACK/index.html'">
+					POP</button>
+				</div>
+			<pre>	<p>Step 1: [Stack has item to be removed]</p></pre>
+			<pre>	<p>			IF TOP = MAXSTK then </p></pre>
+			<pre>	<p>			Print:"Stack underflow" and Return</p></pre>
+			<pre>	<p>Step 2: Set ITEM = STACK[TOP]</p></pre>
+			<pre>	<p>Step 3: Set TOP = TOP - 1</p></pre>
+			<pre>	<p>Step 4: Return</p> </pre>
+			
+			</div>
+			<div class="item push1" style="display:none;">
+			<div class="title"><p>Stack</p>Linedlist Representation of Stack( PUSH )</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/Stack%20final/linked%20stack1/index.html'">
+					Linkedlist PUSH</button>
+				</div>
+			<pre>	<p>Step 1: Create a new NODE set NEWNODE = new NODE</p></pre>
+			<pre>	<p>Step 2: INPUT ITEM</p></pre>
+			<pre>	<p>Step 3: Set NEWNODE -> DATA = ITEM</p></pre>
+			<pre>	<p>Step 4: IF TOP = NULL then</p></pre>
+			<pre>	<p>			a) set TOP = NEWNODE</p></pre>
+			<pre>	<p>			b) NEWNODE -> LINK = NULL</p></pre>
+			<pre>	<p>		ELSE</p></pre>
+			<pre>	<p>			a)set NEWNODE -> LINK = TOP</p></pre>
+			<pre>	<p>			b)set TOP = NEWNODE</p></pre>
+			<pre>	<p>		[end of IF ]</p></pre>
+			<pre>	<p>Step 5: Exit</p></pre>
+				
+			</div>
+			<div class="item pop1" style="display:none;">
+			<div class="title"><p>Stack</p>Linedlist Representation of Stack( POP )</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/Stack%20final/linked%20stack1/index.html'">
+					Linkelist POP</button>
+				</div>
+			<pre>	<p>Step 1: IF( TOP = NULL) then</p></pre>
+			<pre>	<p>				Write "STACK IS EMPTY"</p></pre>
+			<pre>	<p>			ELSE</p></pre>
+			<pre>	<p>				a)set TEMP = TOP</p></pre>
+			<pre>	<p>				b)set TOP = TOP -> LINK</p></pre>
+			<pre>	<p>				c)WRITE: TEMP -> DATA</p></pre>
+			<pre>	<p>				d)DELETE (TEMP)</p></pre>
+			<pre>	<p>			[end of IF ]</p></pre>
+			<pre>	<p>Step 2: Exit</p></pre>
+				
+			</div>
+			
+			
+			
+			
+		 </div>
+	</div>
+</div>
+
+
+<script src="algorithm.js"></script>
+</body>
+</html>

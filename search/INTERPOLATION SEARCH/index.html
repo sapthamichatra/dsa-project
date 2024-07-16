@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body style="background-color:black;">
+	<br />
+	<!--BUTTON CODE <- AND ->-->
+<div class="nextprev">
+<ul>
+	<li class="prev"><a href="file:///C:/final/Algorithm-final/3SEARCH/algorithm.html"><span><a href="file:///C:/final/AA-Home/statpage.html"></a></span></li>
+	<li class="next"><a href="file:///C:/final/search/JUMP%20SEARCH/index.html"><span><a href="file:///C:/final/SORTING%20final/QuickSort/index.html"></a></span></li> 
+	
+</ul>
+</div>
+<!--BUTTON CODE <- AND ->-->
+	<p class="header" style="text-shadow:2px 2px rgb(255, 235, 211);color:rgb(255, 235, 211);font-size:50px;font-family: Lucida Console, Courier New, monospace;">INTERPOLATION SEARCH</p>
+
+
+	<div id="array"></div>
+	<br /><br />
+<div style="text-align: center;color:rgb(255, 235, 211);font-size:30px;font-family: Lucida Console, Courier New, monospace;">
+	<label for="fname1">
+		Array:
+	</label>
+	<input type="text" id="fname1" name="fname1" style="background-color:rgb(255, 235, 211);width:400px;height:30px;color:black;font-size:30px;font-family: Lucida Console, Courier New, monospace;" onkeypress="return onlyNumberKeySpace(event)" autofocus />
+	<br /><br />
+
+	<div style="text-align: center;color:rgb(255, 235, 211);font-size:30px;font-family: Lucida Console, Courier New, monospace;">
+		<label for="fname">
+		Number to be Searched:
+	</label>
+		<input type="text" id="fname" name="fname" onkeypress="return onlyNumberKey(event)" style="background-color:rgb(255, 235, 211);width:400px;height:30px;color:black;font-size:30px;font-family: Lucida Console, Courier New, monospace;"/>
+		
+		<br /><br />
+		<button id="btn1" class="button btn1" onclick="generatearray()" style="font-size:30px;font-family: Lucida Console, Courier New, monospace;">Generate</button>
+		<button id="btn" class="button btn" onclick="JumpSearch()" style="font-size:30px;font-family: Lucida Console, Courier New, monospace;">Search</button>
+		
+	<button id="btn2" class="button btn2" onclick="clearInput()" style="font-size:30px;font-family: Lucida Console, Courier New, monospace;">Reset</button>
+	<button id="btn3" class="button btn3" onclick="TimeComplexity()" style="font-size:30px;font-family: Lucida Console, Courier New, monospace;">Time complexity</button>
+	<button id="btn4" class="button btn4" onclick="SpaceComplexity()" style="font-size:30px;font-family: Lucida Console, Courier New, monospace;">Space complexity</button>
+	
+		<br />
+		<br />
+		<div id="text"></div>
+		<div id="text1" style="text-align:right_top;color:rgb(255, 235, 211);font-size:30px;"></div>
+		<div id="text2" style="text-align:right_top;color:rgb(255, 235, 211);font-size:30px;"></div>
+		<div id="text3" style="text-align:right_top;color:rgb(255, 235, 211);font-size:30px;"></div>
+		<div id="text4" style="text-align:right_top;color:rgb(255, 235, 211);font-size:30px;"></div>
+	</div>
+	<script>
+function onlyNumberKey(evt) {
+              
+            // Only ASCII character in that range allowed
+            var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+            if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+                return false;
+            return true;
+        }
+    </script>
+	
+<script>
+        function onlyNumberKeySpace(evt) {
+              
+            // Only ASCII character in that range allowed
+            var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+            if (ASCIICode != 32 && (ASCIICode < 48 || ASCIICode > 57) )
+                return false;
+            return true;
+        }
+</script>
+
+	<script src="script.js"></script>
+</body>
+</html>

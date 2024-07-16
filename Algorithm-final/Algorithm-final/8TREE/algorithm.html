@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tree</title>
+<link rel="stylesheet" type="text/css" href="algorithm.css">
+</head>
+<body>
+<!--BUTTON CODE <- AND ->-->
+<div class="nextprev">
+<ul>
+	<li class="prev"><a href="file:///C:/final/AA-Home/statpage.html"><span><a href="file:///C:/final/AA-Home/statpage.html"></a></span></li>
+	<li class="next"><a href="file:///C:/final/Algorithm-final/1SORT/algorithm.html"><span><a href="file:///C:/final/Algorithm-final/1SORT/algorithm.html"></a></span></li> 
+
+</ul>
+</div>
+<!--BUTTON CODE <- AND ->-->
+<div class="wrapper">
+	<div class="wrapper_left">
+		<ul>
+			<li data-li="linear"class="active">
+				<p>Insertion </p>
+			</li>
+			<li data-li="binary">
+				<p>Deletion</p>
+			</li>
+			<li data-li="exponential">
+				<p>Searching</p>
+			</li>
+			<li data-li="interpolation">
+				<p>Pre-order</p>
+			</li>
+			<li data-li="jump">
+				<p>Post-order</p>
+			</li>
+			<li data-li="ternary">
+				<p>In-order</p>
+			</li>
+			
+			
+		</ul>
+	</div>
+	<div class="wrapper_right">
+		
+		 <div class="container">
+			<div class="item linear">
+			<div class="title"> <p>Tree</p>Binary Search Tree( Insertion )</div>
+				<div class="item_info">
+					<div class="img"></div>
+					
+					<button type="button"onclick="location.href='file:///C:/final/Tree/BST/BST/index.html'">
+					let's Visualize</button>
+				</div>
+			<pre>	<p>INSBST(INFO, LEFT, RIGHT, ROOT, AVAIL, ITEM, LOC) A binary search tree T is in memory
+and an ITEM of information is given. This algorithm finds the location LOC of ITEM in T or adds ITEM as a new</p></pre>
+			<pre>	<p>node in Tat</p></pre>
+			<pre>	<p>location LOC.</p></pre>
+			<pre>	<p>Step 1. Call FIND(INFO, LEFT, RIGHT, ROOT, ITEM. LOC, PAR).</p></pre>
+			<pre>	<p>Step 2. If LOC #NULL, then Exit.</p></pre>							
+			<pre>	<p>Step 3. [Copy ITEM into new node in AVAIL list.]</p></pre>
+			<pre>	<p>			(a) If AVAIL NULL, then: Write: OVERFLOW, and Exit 
+								(b) Set NEW:= AVAIL,
+								AVAIL: LEFT[AVAIL] and INFO [NEW]: ITEM.</p></pre>
+			<pre>	<p>			(c) LOC: NEW, LEFT[ NEW]:-NULL and</p></pre>
+			<pre>	<p>RIGHT[NEW] := NULL.</p></pre>								
+			<pre>	<p>Step 4. [Add ITEM to tree.]</p></pre>
+			<pre>	<p>			If PAR = NULL, then: Set ROOT: NEW.</p></pre>
+			<pre>	<p>			Else if ITEM < INFO[PAR], then: Set LEFT [PAR] :- NEW.</p></pre>
+			<pre>	<p>	Else:</p></pre>
+			<pre>	<p>			Set RIGHT[PAR] := NEW. [End of If structure.]</p></pre>
+			<pre>	<p>5. Exit.</p></pre>
+			
+			</div>
+			<div class="item binary" style="display:none;">
+			<div class="title"><p>Tree</p> Binary Search Tree( Deletion )</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/Tree/BST/BST/index.html'">
+					let's Visualize</button>
+				</div>
+			<pre>	<p></p></pre>
+			<pre>	<p></p></pre>
+			<pre>	<p></p></pre>
+			<pre>	<p></p></pre>
+			<pre>	<p></p></pre>
+			<pre>	<p></p></pre>
+			<pre>	<p></p></pre>
+			<pre>	<p></p></pre>
+			<pre>	<p></p></pre>
+			<pre>	<p></p></pre>
+			<pre>	<p></p></pre>
+			<pre>	<p></p></pre>
+			<pre>	<p></p></pre>
+			<pre>	<p></p></pre>
+			<pre>	<p></p></pre>
+			<pre>	<p></p></pre>
+			<pre>	<p></p></pre>
+			<pre>	<p></p></pre>	
+			<pre>	<p>Step 1: [Initialize segment variable]</p></pre>
+			<pre>	<p>			Set BEG = LB, END=UB and MID=INT(BEG+END/2)</p></pre>
+			<pre>	<p>Step 2: Repeat Step 3 and 4 WHILE BEG <= END </p></pre>
+			<pre>	<p>Step 3: IF ITEM IS < DATA[MID] then</p></pre>
+			<pre>	<p>			set END = MID -1</p></pre>
+			<pre>	<p>		ELSE IF ITEM = DATA[MID] then</p> </pre>
+			<pre>	<p>			set LOC = MID</p></pre>
+			<pre>	<p>		Goto Step 5</p></pre>
+			<pre>	<p>		ELSE </p></pre>
+			<pre>	<p>			set BEG = MID+1</p></pre>
+			<pre>	<p>				[end of IF ]</p></pre>
+			<pre>	<p>Step 4: set MID = INT(BEG+END/2)</p></pre>
+			<pre>	<p>				[end of step 2 loop ]</p></pre>
+			<pre>	<p>Step 5: IF DATA[MID]=ITEM then</p></pre>
+			<pre>	<p>			WRRITE :"ITEM IS FOUND ": LOC</p></pre>
+			<pre>	<p>		else</p></pre>
+			<pre>	<p>			set LOC = NULL</p></pre>
+			<pre>	<p>			WRRITE :"ITEM IS NOT FOUND"</p></pre>
+			<pre>	<p>		[end of IF ]</p></pre>
+			<pre>	<p>Step 8: Exit</p></pre>	
+			</div>
+			<div class="item exponential" style="display:none;">
+			<div class="title"><p>Tree</p> Binary Search Tree( Searching )</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/Tree/BST/BST/index.html'">
+					let's Visualize</button>
+				</div>
+			<pre>	<p>FIND(INFO, LEFT, RIGHT, ROOT, ITEM, LOC, PAR) A binary search tree T is in memory
+and an ITEM of information is given. This procedure finds the location LOC of ITEM in T and
+also the location PAR of the parent of ITEM. </p></pre>
+			<pre>	<p>Step 1: If ROOT = NULL, then: Set LOC= NULL and PAR:= NULL, and Return.</p></pre>
+			<pre>	<p>Step 2. [ITEM at root?]</p></pre>
+			<pre>	<p>			If ITEM=INFO [ROOT], then: Set LOC ROOT and PAR:=NULL</p></pre>
+			<pre>	<p>			and Return.</p></pre>
+			<pre>	<p>Step 3. pointers PTR and SAVE.]</p></pre>
+			<pre>	<p>			If ITEM < INFO[ROOT], then: Set PTR LEFT [ROOT] and SAVE:= ROOT Else:</p></pre>
+			<pre>	<p>			Set PTR RIGHT[ROOT] and SAVE:= ROOT.</p></pre>
+			<pre>	<p>			[End of If structure.]</p></pre>
+			<pre>	<p>Step 4. Repeat Steps 5 and 6 while PTR NULL: 5. [ITEM found?]</p></pre>
+			<pre>	<p>			If ITEM=INFO[PTR], then: Set LOC := PTR and PAR := SAVE,</p></pre>
+			<pre>	<p>			and Return. 6. If ITEM INFO[PTR], then:</p></pre>
+			<pre>	<p>			Set PTR and PTR :- LEFT(PTR).</p></pre>
+			<pre>	<p>		Else: </p></pre>
+			<pre>	<p>			Set SAVE PTR and PTR := RIGHT(PTR).</p></pre>
+			<pre>	<p>		[End of If structure.]</p></pre> 
+			<pre>	<p>	[End of Step 4 loop.]</p></pre>
+			<pre>	<p>		[Search unsuccessful.] 
+				Set LOC NULL and PAR - SAVE.</p></pre>
+			<pre>	<p>Step 8. Exit</p></pre>
+			<pre>	<p></p></pre>
+			
+				
+			</div>
+			<div class="item interpolation" style="display:none;">
+			<div class="title"><p>Tree</p> Binary Search Tree( Pre-order )</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/Tree/BST/BST/index.html'">
+					let's Visualize</button>
+				</div>
+			<pre>	<p>PREORD(INFO, LEFF, RIGHT, ROOT) A binary tree T is in memory. The algorithm does a preorder 
+traversal of T, applying an operation PROCESS to each of its nodes. An array STACK is used to temporarily hold 
+the addresses of nodes.</p></pre>
+			<pre>	<p>Step 1. [Initially push NULL onto STACK, and initialize PTR.] Set TOP := = 1, STACK[I]:= NULL and PTR = ROOT.</p></pre>
+			<pre>	<p>Step 2. Repeat Steps 3 to 5 while PTR NULL:</p></pre>
+			<pre>	<p>Step 3. Apply PROCESS to INFO[PTR]. 4. [Right child?]</p></pre>
+			<pre>	<p>		If NULL, then: [Push on STACK.] 
+			Set TOP TOP+1, and STACK[TOP] RIGHT(PTR).</p></pre>
+			<pre>	<p>[End of If structure.]</p></pre>
+			<pre>	<p>Step 5. [Left child?]</p></pre>
+			<pre>	<p>		If LEF[PTR] NULL, then: Set PTR LEFT(PTR).</p></pre>
+			<pre>	<p>Else: [Pop from STACK.] 
+			Set PTR ST ACK[TOP] and TOP := TOP-1. 
+			[End of If structure.]</p></pre>
+			<pre>	<p>[End of Step 2 loop.] </p></pre>
+			<pre>	<p>Step 6. Exit.</p></pre>
+			
+				
+			</div>
+			<div class="item jump" style="display:none;">
+			<div class="title"><p>Tree</p> Binary Search Tree( Post-0rder )</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/Tree/BST/BST/index.html'">
+				let's Visualize</button>
+				</div> 
+			
+			<pre>	<p>POSTORD(INFO, LEFT, RIGHT, ROOT)</p></pre>
+			<pre>	<p>A binary tree T is in memory. This algorithm does a postorder traversal</p></pre>
+			<pre>	<p>applying an operation PROCESS to each of its nodes. An array STACK</p></pre>
+			<pre>	<p>to temporarily hold the addresses of nodes.</p></pre>
+			<pre>	<p>Step 1.[Push NULL onto STACK and initialize PTR.] Set TOP: 1, STACK[1]:= NULL and PTR:= ROOT</p></pre>
+			<pre>	<p>Step 2. [Push left-most path onto STACK.] Repeat Steps 3 to 5 while PTR #NULL:</p></pre>
+			<pre>	<p>Step 3. Set TOP TOP + 1 and STACK[TOP] := PTR.</p></pre>
+			<pre>	<p>			[Pushes PTR on STACK.] 4. If RIGHT[PTR] # NULL, then: [Push on STACK.]</p></pre>
+			<pre>	<p>			Set TOP:- TOP + 1 and STACK[TOP]:--RIGHT[PTR].</p></pre>		
+			<pre>	<p>			[End of If structure.]</p></pre>
+			<pre>	<p>Step 5. Set PTR := LEFT[PTR]. [Updates pointer PTR.]</p></pre>
+			<pre>	<p>			[End of Step 2 loop.]</p></pre>
+			<pre>	<p>Step 6. Set PTR STACK[TOP] and TOP:- TOP-1. C</p></pre>
+			<pre>	<p>			[Pops node from STACK]</p></pre>
+			<pre>	<p>Step 7. Repeat while PTR>0:</p></pre>
+			<pre>	<p>			(a) Apply PROCESS to INFO[PTR].</p></pre>
+			<pre>	<p>			(b) Set PTR STACK[TOP] and TOP TOP-1. [Pops node from STACK]</p></pre>				
+			<pre>	<p>			[End of loop.]</p></pre>
+			<pre>	<p>Step 8. If <0, then: (a) Set</p></pre>
+			<pre>	<p>			PTR-PTR.</p></pre>
+			<pre>	<p>			(b) Go to Step 2. [End of If structure.]</p></pre>
+			<pre>	<p>Step 9: Exit</p></pre>
+			
+			</div>
+			<div class="item ternary" style="display:none;">
+			<div class="title"><p>Tree</p> Binary Search Tree( In-order )</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/Tree/BST/BST/index.html'">
+					let's Visualize</button>
+				</div>
+			<pre>	<p>INORD(INFO, LEFF, RIGHT, ROOT)</p></pre>
+			<pre>	<p>A binary tree is in memory. This algorithm does an inorder traversal of 1.
+applying an operation PROCESS to each of its node. An array STACKI used
+to temporarily hold the addresses of nodes.</p></pre>
+			<pre>	<p>1. [Push NULL onto STACK and initialize PTR.] Set TOP I, STACK[I]= NULL and PTR := ROOT.</p></pre>
+			<pre>	<p>2. Repeat while PTR NULL [Pushes left-most path onto STACK]</p></pre>
+			<pre>	<p>		(a)Set TOP TOP + 1 and STACK[TOP]:= PTR. [Saves node.]</p></pre>
+			<pre>	<p>		(b) Set PTR LEFT(PTR), [Updates PTR.] [End of loop.]</p></pre>
+			<pre>	<p>3. Set PTR STACK[TOP] and TOP = TOP - 1. 
+			[Pops node from STACK.]</p></pre>
+			<pre>	<p>4. Repeat Steps 5 to 7 while PTRNULL.: [Backtracking.]</p></pre>
+			<pre>	<p>5. Apply PROCESS to INFO[PTR),</p></pre>	
+			<pre>	<p>6. [Right child?] If RIGHT[PTR]EN. ULL, then:</p></pre>
+			<pre>	<p>		(a)Set PTR RIGHT(PTR).</p></pre>
+			<pre>	<p>		(b) Go to Step 12</p></pre>
+			<pre>	<p>		[End of If structure.]</p></pre>
+			<pre>	<p>7. Set PTR STACK[TOP] and TOP TOP-1. [Pops node.)</p></pre>
+			<pre>	<p>		[End of Step 4 loop.]</p></pre>
+			<pre>	<p>8. Exit.</p></pre>
+			
+			</div>
+	
+					
+		 </div>
+	</div>
+</div>
+
+
+<script src="algorithm.js"></script>
+</body>
+</html>

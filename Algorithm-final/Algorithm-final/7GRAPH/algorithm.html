@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Graph</title>
+<link rel="stylesheet" type="text/css" href="algorithm.css">
+</head>
+<body>
+<!--BUTTON CODE <- AND ->-->
+<div class="nextprev">
+<ul>
+	<li class="prev"><a href="file:///C:/final/AA-Home/statpage.html"><span><a href="file:///C:/final/AA-Home/statpage.html"></a></span></li>
+	<li class="next"><a href="file:///C:/final/Algorithm-final/8TREE/algorithm.html"><span><a href="file:///C:/final/Algorithm-final/8TREE/algorithm.html"></a></span></li> 
+</ul>
+</div>
+<!--BUTTON CODE <- AND ->-->
+<div class="wrapper">
+	<div class="wrapper_left">
+		<ul>
+			<li data-li="linear"class="active">
+				<p>BFS</p>
+			</li>
+			<li data-li="binary">
+				<p>DFS</p>
+			</li>
+		
+			
+		</ul>
+	</div>
+	<div class="wrapper_right">
+		
+		 <div class="container">
+			<div class="item linear">
+			<div class="title">Graph<p>Bredth First Search</p></div>
+				<div class="item_info">
+					<div class="img"></div>
+					
+					<button type="button"onclick="location.href='file:///C:/final/graph/bfs%20final/graph.html'">
+					let's Visualize</button>
+				</div>
+			<pre>	<p>This algorithm performs Bredth First Search</p></pre> 
+<pre>	<p>on a graph beginning at a starting node A</p></pre>
+			<pre>	<p>Step 1: Initialize all the nodes to ready state </p></pre>
+			<pre>	<p>			STATUS = 1</p></pre>
+			<pre>	<p>Step 2: Add the starting node A to QUEUE and change </p></pre>
+<pre>	<p>		its status to the waiting state that is </p></pre>
+			<pre>	<p>			STATUS = 2</p></pre>
+			<pre>	<p>Step 3: Repeat Step 4 and 5 unitll QUEUE is empty </p></pre>
+			<pre>	<p>Step 4: Remove the front node N from QUEUE process N</p></pre>
+<pre>	<p>		and change the status of N to the process state that is </p></pre>
+			<pre>	<p>			STATUS = 3</p></pre>
+			<pre>	<p>Step 5: Add to rear of QUEUE all the neighbours of N</p></pre>
+<pre>	<p>		that are in the steady sate(STATUS = 1) and change their status to the</p></pre>
+ <pre>	<p>		waiting state (STATUS = 2)</p></pre>
+			<pre>	<p>			[end of Step 3 Loop ]</p></pre>
+			
+			<pre>	<p>Step 6: Exit</p></pre>	
+			</div>
+			<div class="item binary" style="display:none;">
+			<div class="title">Graph<p>Depth First Search</p></div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/graph/dfs%20final/resreq.html'">
+					let's Visualize</button>
+				</div>
+<pre>	<p>This algorithm performs Depth First Search at a starting node A is as follows </p></pre> 
+<pre>	<p>first we examine the starting node A then we examine each node N along a path P which begins at A</p></pre>
+<pre>	<p>That is we process a eighbor of A, then a neighbour of a neighbour of A and so on.</p></pre> 
+<pre>	<p>Step 1: Initialize all the nodes to ready state </p></pre>
+			<pre>	<p>			STATUS = 1</p></pre>
+			<pre>	<p>Step 2: Push the starting node A onto STACK and change its status to the waiting state </p></pre>
+			<pre>	<p>			STATUS = 2</p></pre>
+			<pre>	<p>Step 3: Repeat Step 4 and 5 ubtill STACK is empty</p></pre>
+			<pre>	<p>Step 4: Pop the top node N of STACK .process N and change its ststus to processed state </p></pre>
+			<pre>	<p>			STATUS = 3</p></pre>
+			<pre>	<p>Step 5: Push onto STACK all the neighbors of N that are still in the ready state</p></pre>
+			<pre>	<p>			STATUS = 1 and change their status to the waiting state STATUS = 2</p></pre>
+			<pre>	<p>			[end of Step 3 Loop ]</p></pre>
+			
+			<pre>	<p>Step 6: Exit</p></pre>	
+			</div>
+			
+			
+			
+			
+		 </div>
+	</div>
+</div>
+
+
+<script src="algorithm.js"></script>
+</body>
+</html>

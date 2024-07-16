@@ -1,0 +1,225 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*-----------------------------------------#212131--------------------------button code----   <-   ->   ------*/
+.nextprev ul{
+	position:absolute;
+	top:10%;
+	left:90%;
+	transform:translate(-50%,-50%);
+	margin:0;
+	padding:0;
+	display:flex;
+}
+.nextprev ul li{
+	list-style:none; 
+	width:80px;
+	height:80px;
+	background:#262626;
+	margin:0 10px;
+border-radius:50%;
+transition:0.5s;
+	
+}
+.nextprev ul li:hover{
+	background:#0070ff;
+}
+.nextprev ul li span{
+	position: absolute;
+	width:20px;
+	height:20px;
+	border:4px solid #fff;
+	transition:0.5s;/*run it*/
+}
+.nextprev ul li.next span{
+	top: 50%;
+	right:20%;
+	transform:translateY(-50%)rotate(-45deg);/*diamond 1 2 3 4....4th one boxline disappears run it*/
+	border-left:none;
+	border-top:none;
+}
+.nextprev ul li.next:hover span{
+	right:16%;/*runit added after ul li.next:hover span:before{*/
+}
+.nextprev ul li.next span:before{
+	content:'';
+position:absolute;
+width:38px;
+height:4px;
+background:#fff;/*run*/          /*run*/
+transform-origin:right;
+transform:rotate(45deg) translate(0px,25px)scaleX(0);  /*run*/
+transition:0.5s;
+}
+.nextprev ul li.next:hover span:before{
+transform:rotate(45deg) translate(0px,25px)scaleX(1);   /*run*/
+}
+
+/*copy paste for prev and run it change right:20% toleft and border left to rght ,and top to bottom*/
+.nextprev ul li.prev span{
+	top: 50%;
+	left:20%;
+	transform:translateY(-50%)rotate(-45deg);
+border-right:none;
+border-bottom:none;
+}
+.nextprev ul li.prev:hover span{
+left:16%;/*runit added after ul li.next:hover span:before{*/
+}
+.nextprev ul li.prev span:before{
+	content:'';
+position:absolute;
+width:38px;
+height:4px;
+background:#fff;/*run*/          /*run*/
+transform-origin:left;/*chaned to left line align to this <*/
+transform:rotate(45deg) translate(-2px,-1px)scaleX(0);  /*run*/
+transition:0.5s;
+}
+.nextprev ul li.prev:hover span:before{
+transform:rotate(45deg) translate(-2px,-1px)scaleX(1);   /*run*/
+}
+/*-------------------------------------------------------------------till here button code----   <-   ->   ------*/
+.circles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  /* border-radius: 50%!important; */
+  height: 20px;
+  background: #49b6c9;
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+  left: 5%;
+  width: 50px;
+  height: 50px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  left: 6%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  left: 89%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 90%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 85%;
+  width: 10px;
+  height: 10px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  left: 5%;
+  width: 50px;
+  height: 50px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  left: 10%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 100%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  left: 95%;
+  width: 50px;
+  height: 50px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.8;
+    border-radius: 0;
+  }
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+
+.subheading{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 59px;
+  color: #024453;
+}
+
+#basic-addon1{
+  color: black;
+  background-color: transparent;
+  outline: none;
+  border: none;  
+}
+
+input :focus{
+  outline: 0!important;
+}
+
+table input{
+  padding: 8px;
+  border: #024453 1px solid;
+  border-radius: 10%;
+}
+
+td,
+th{
+  padding: 5px;
+}

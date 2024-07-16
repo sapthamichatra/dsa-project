@@ -1,0 +1,21 @@
+<script>
+let hasAlertDisplayed=false;
+</script>
+
+<script>
+function checkValue(){
+const resourceA= document.getElementById("resourceA");
+const value=parseInt(resourceA.value);
+if(isNaN(value)||value<1||value>5){
+if(!hasAlertDisplayed){
+alert("Number of vertex must be in the range of 1-5");
+hasAlertDisplayed=true;
+}
+resourceA.value="";
+resourceA.focus();
+}
+else{
+hasAlertDisplayed=false;
+}
+}
+</script>

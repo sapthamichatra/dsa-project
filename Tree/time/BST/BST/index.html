@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="styles.css">
+
+<body style="background-color:black;">
+<!--BUTTON CODE <- AND ->-->
+<div class="nextprev">
+<ul>
+	<li class="prev"><a href="file:///C:/final/Algorithm-final/8TREE/algorithm.html"><span><a href="file:///C:/final/Algorithm-final/8TREE/algorithm.html"></a></span></li>
+	<li class="next"><a href="file:///C:/final/SORTING%20final/Bubble%20Sort/index.html"><span><a href="file:///C:/final/SORTING%20final/Bubble%20Sort/index.html"></a></span></li> 
+
+</ul>
+</div>
+<!--BUTTON CODE <- AND ->-->
+<section class="head">BINARY SEARCH TREE</section>
+<center>
+<button class="btn1"
+		onclick="InsertNode();" id="Button1" >
+	CRETATE BST</button>
+	
+<!-- "Insertion Sort" button -->
+<button class="btn2"
+		onclick="DeleteNode();"
+		id="Button2" >
+	DELETE</button>
+	
+
+<!-- "Reset" button -->
+<button class="btn3"
+		onclick="SearchNode();"
+		id="Button3" >
+	SEARCH</button>
+	
+
+
+<button class="btn4"
+		onclick="Print(bst.inorder);"
+		id="Button4" >
+	INORDER</button>
+	
+
+<button class="btn5"
+		onclick="Print(bst.preorder);"
+		id="Button5" >
+	PREORDER</button>
+<button class="btn6"
+		onclick="Print(bst.postorder);"
+		id="Button6" >
+	POSTORDER</button>
+
+<button class="btn7"
+		onclick="Print(bst.postorder);"
+		id="Button7" >
+	TIME COMPLEXITY</button>
+<button class="btn8"
+		onclick="Print(bst.postorder);"
+		id="Button8" >
+	SPACE COMPLEXITY</button>
+<button class="btn9"
+		onclick="Reset();"
+		id="Button9" >
+	RESET</button>
+	</div>	
+
+</center>
+<br><br>
+<input type="text" id="value" style="width:300px;height:30px;" value="" onkeypress="handleKeyPress(event)" autofocus placeholder="Press Enter to insert (Leave empty for random number)" size="45">
+<span id="msg" style="color:white;font-size:30px;"></span>
+
+<!-- load the d3.js library -->
+<script src="d3.min.js"></script>
+<script src="BST_AVL.js" charset="utf-8"></script>
+<script src="graph.js" charset="utf-8"></script>
+
+</body>

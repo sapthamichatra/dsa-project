@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sorting</title>
+<link rel="stylesheet" type="text/css" href="algorithm.css">
+</head>
+<body>
+<!--BUTTON CODE <- AND ->-->
+<div class="nextprev">
+<ul>
+	<li class="prev"><a href="file:///C:/final/AA-Home/statpage.html"><span><a href="file:///C:/final/AA-Home/statpage.html"></a></span></li>
+	<li class="next"><a href="file:///C:/final/Algorithm-final/2ARRAY/algorithm.html"><span><a href="file:///C:/final/Algorithm-final/2ARRAY/algorithm.html"></a></span></li> 
+	
+</ul>
+</div>
+<!--BUTTON CODE <- AND ->-->
+<div class="wrapper">
+	<div class="wrapper_left">
+		<ul>
+			<li data-li="bubble"class="active">
+				<p>Bubble </p>
+			</li>
+			<li data-li="selection">
+				<p>Selection</p>
+			</li>
+			<li data-li="insertion">
+				<p>Insertion</p>
+			</li>
+			<li data-li="exchange">
+				<p>Exchange</p>
+			</li>
+			<li data-li="counting">
+				<p>Counting</p>
+			</li>
+			<li data-li="heap">
+				<p>Heap</p>
+			</li>
+			<li data-li="bucket">
+				<p>Bucket</p>
+			</li>
+			<li data-li="merge">
+				<p>Merge</p>
+			</li>
+			<li data-li="quick">
+				<p>Quick</p>
+			</li>
+			<li data-li="brick">
+				<p>Brick</p>
+			</li>
+			<li data-li="shell">
+				<p>Shell</p>
+			</li>
+		</ul>
+	</div>
+	<div class="wrapper_right">
+		
+		 <div class="container">
+			<div class="item bubble">
+			<div class="title"><p>Sorting</p>BUBBLE SORTING</div>
+				<div class="item_info">
+					<div class="img"></div>
+					
+					<button type="button"onclick="location.href='file:///C:/final/SORTING%20final/Bubble%20Sort/index.html'">
+					BUBBLE</button>
+				</div>
+			<pre>	<p>Step 1: Repeat Step 2 and Step 3 FOR i=1 to n-1</p></pre>
+			<pre>	<p>Step 2: Repeat Step 3 FOR j=1 to n-1</p></pre>
+			<pre>	<p>Step 3: IF(DATA[j]>DATA[j+1]) then</p></pre>
+			<pre>	<p>		a)set TEMP=DATA[j]</p></pre>
+			<pre>	<p>		b)set DATA[j]=DATA[j+1]</p></pre>
+			<pre>	<p>		c)set DATA[j+1=TEMP</p></pre>
+			<pre>	<p>				[end of IF ]</p></pre>
+			<pre>	<p>			[end of FOR j ]</p></pre>
+			<pre>	<p>		[end of FOR i ]</p></pre>
+			
+			</div>
+			<div class="item selection" style="display:none;">
+			<div class="title"><p>Sorting</p> SELECTION SORTING</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/SORTING%20final/Selection%20Sort/index.html'">
+					SELETION</button>
+				</div>
+			<pre>	<p>Step 1: Repeat Step 2 and Step 7 FOR i=1 to n-1</p></pre>
+			<pre>	<p>Step 2: set SMALL = A[i] </p></pre>
+			<pre>	<p>Step 3: set POS = i</p></pre>
+			<pre>	<p>Step 4: REPEAT Step 5 FOR j=i+n </p></pre>
+			<pre>	<p>Step 5: IF ( A[j] < SMALL)then </p></pre>
+			<pre>	<p>		a)set SMALL=A[j]</p></pre>
+			<pre>	<p>		b)set POS=j</p></pre>
+			<pre>	<p>			[end of IF ]</p></pre>
+			<pre>	<p>		[end of FOR j ]</p></pre>
+			<pre>	<p>Step 6: set A[POS]= A[i]</p></pre>
+			<pre>	<p>Step 7: set A[i]= SMALL</p></pre>
+			<pre>	<p>		[end of FOR i ]</p></pre>
+			<pre>	<p>Step 8: Exit</p></pre>	
+			</div>
+			<div class="item insertion" style="display:none;">
+			<div class="title"><p>Sorting</p> INSERTION SORTING</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/SORTING%20final/Insertion%20Sort/index.html'">
+					INSERTION</button>
+				</div>
+			<pre>	<p>Step 1: Repeat Step 2 and Step 5 FOR i=1 to n</p></pre>
+			<pre>	<p>Step 2: set TEMP = A[i] </p></pre>
+			<pre>	<p>Step 3: Repeat Step 4 FOR j= i-1 to 1 by -1</p></pre>
+			<pre>	<p>Step 4: IF (A[j] > TEMP)</p></pre>
+			<pre>	<p>		set A[j+1]= A[j]</p></pre>
+			<pre>	<p>	else </p></pre>
+			<pre>	<p>		Goto Step 5</p></pre>
+			<pre>	<p>		[end of IF ]</p></pre>
+			<pre>	<p>			[end of FOR j ]</p></pre>
+			<pre>	<p>Step 5: set A[j+1]= TEMP</p></pre>
+			<pre>	<p>		[end of FOR i ]</p></pre>
+			<pre>	<p>Step 8: Exit</p></pre>	
+				
+			</div>
+			<div class="item exchange" style="display:none;">
+			<div class="title"><p>Sorting</p> EXCHANGE SORTING</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/SORTING%20final/Exchange%20Sort/index.html'">
+					EXCHANGE</button>
+				</div>
+				
+			<pre>	<p>Step 1: set n=length(a)</p></pre>
+			<pre>	<p>Step 2: Repeat Step 3 FOR i=1 to n-2 by 1 </p></pre>
+			<pre>	<p>Step 3: Repeat Step 4 FOR j= i+1 to n-1 by 1</p></pre>
+			<pre>	<p>Step 4: IF (num[i] > num[j])</p></pre>
+			<pre>	<p>				swap(num[i],num[j])</p></pre>
+			<pre>	<p>		   [end of IF]	</p></pre>
+			<pre>	<p>		 [end of FOR j]</p></pre>
+			<pre>	<p>		[end of FOR i] ]</p></pre>			
+			<pre>	<p>Step 5: Exit</p></pre>
+				
+			</div>
+			<div class="item counting" style="display:none;">
+			<div class="title"><p>Sorting</p> COUNTING SORTING</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/SORTING%20final/Counting%20Sort/index.html'">
+					COUNTING</button>
+				</div>
+			<pre>	<p>Step 1: set max=max(a))</p></pre>
+			<pre>	<p>Step 2: Repeat Step 3 FOR i=0 to max by 1 </p></pre>
+			<pre>	<p>Step 3: Set count[i]=0</p></pre>
+			<pre>	<p>Step 4: Repeat step 5 FOR i=1 to n</p></pre>
+			<pre>	<p>Step 5: Repeat step 6 FOR j=0 to max</p></pre>
+			<pre>	<p>Step 6: IF a[i]=j 	  	</p></pre>
+			<pre>	<p>		 		set count[i]=count[i]+1</p></pre>
+			<pre>	<p>		[end of IF ]</p></pre>
+			<pre>	<p>		[end of FOR j ]</p></pre>
+			<pre>	<p>		[end of FOR i ]</p></pre>
+			<pre>	<p>Step 7: Exit</p></pre>
+				
+			</div>
+			<div class="item heap" style="display:none;">
+			<div class="title"><p>Sorting</p> HEAP SORTING</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/SORTING%20final/HEAP/index.html'">
+					HEAP</button>
+			</div>
+			<pre>	<p>Step 1: set l:=left, r:=right</p></pre>
+			<pre>	<p>Step 2: IF i>heap_size[array]&&array[l]>array[j]</p></pre>
+			<pre>	<p>				set largest:=l</p></pre>
+			<pre>	<p>		   ELSE</p></pre>
+			<pre>	<p>				set largest=i</p></pre>
+			<pre>	<p>		  [end of IF ]</p></pre>
+			<pre>	<p>Step 3: IF i>heap_size[array]&&array[l]>array[i]</p></pre>
+			<pre>	<p>		 		set largest:=r</p></pre>
+			<pre>	<p>		  [end of IF ]</p></pre>
+			<pre>	<p>Step 4: IF largest!=i</p></pre>
+			<pre>	<p>		 		swap(array[i],array[largest]),maxheapify(array,largest)</p></pre>
+			<pre>	<p>		  [end of IF ]</p></pre>
+			<pre>	<p>Step 5:heap_size(Array)=lengthg(Array)	</p></pre>
+			<pre>	<p>Step 6:Repeat Step 7 FOR i=length(array)/2 to n	</p></pre>
+			<pre>	<p>Step 7: maxheap(array,i)</p></pre>	
+			<pre>	<p>		  [end of FOR i ]</p></pre>
+			<pre>	<p>Step 8:Repeat step 9 FOR i=length(array) to n by 2	</p></pre>
+			<pre>	<p>Step 9:swap(array[1],array[i]),heap_Size[array]+1,maxheapify(array,1)</p></pre>
+			<pre>	<p>		  [end of FOR i]</p></pre>
+			<pre>	<p>Step 10: Exit</p></pre>
+			</div>
+			<div class="item bucket" style="display:none;">
+			<div class="title"><p>Sorting</p> BUCKET SORTING</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/SORTING%20final/bucket%20sort/index.html'">
+					BUCKET</button>
+			</div>
+			<pre>	<p>Step 1: set max=max(a))</p></pre>
+			<pre>	<p>Step 2: Repeat Step 3 FOR i=0 to max by 1 </p></pre>
+			<pre>	<p>Step 3: Set bucket[i]=0</p></pre>
+			<pre>	<p>Step 4: Repeat step 5 FOR i=1 to n</p></pre>
+			<pre>	<p>Step 5: bucket(a[i])++</p></pre>
+			<pre>	<p>		   [end of FOR j ]</p></pre>
+			<pre>	<p>Step 6: Repeat step 5 FOR i=0, j=0 to max</p></pre>
+			<pre>	<p>Step 7: Repeat step 7 WHILE bucket[i]>0</p></pre>
+			<pre>	<p>		 		set a[j++]=i, bucket[i]--</p></pre>
+			<pre>	<p>		[end of WHILE]</p></pre>
+			<pre>	<p>		[end of FOR i ]</p></pre>
+			<pre>	<p>Step 8: Exit</p></pre>
+			</div>
+			<div class="item merge" style="display:none;">
+			<div class="title"><p>Sorting</p> MERGE SORTING</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/SORTING%20final/merge%20sort/index.html'">
+					MERGE</button>
+				</div>
+			<pre>	<p>Step 1: set i=LOW ,j=MID+1, k=LOW</p></pre>
+			<pre>	<p>Repeat Step 3 WHILE (i<= MID) and (j<=HIGH ) </p></pre>
+			<pre>	<p>Step 3: IF A[ i ] > A[ j ] then</p></pre>
+			<pre>	<p>			a) set C[K]= A[j]</p></pre>
+			<pre>	<p>			b) set j = j+1</p></pre>
+			<pre>	<p>			c) set K = K+1</p></pre>
+			<pre>	<p>	else </p></pre>
+			<pre>	<p>			a) set C[K]= A[i]</p></pre>
+			<pre>	<p>			b) set i = i+1</p></pre>
+			<pre>	<p>			c) set K = K+1</p></pre>
+			<pre>	<p>		[end of IF ]</p></pre>
+			<pre>	<p>		[end of WHILE ]</p></pre>
+			<pre>	<p>Step 5: Repeat Step a to c WHILE (i<=MID)</p></pre>
+			<pre>	<p>			a) set C[K]= A[i]</p></pre>
+			<pre>	<p>			b) set i = i+1</p></pre>
+			<pre>	<p>			c) set K = K+1</p></pre>
+			<pre>	<p>		[end of WHILE ]</p></pre>
+			<pre>	<p>Step 6: Repeat Step a to c WHILE (j<=HIGH)</p></pre>
+			<pre>	<p>			a) set C[K]= A[j]</p></pre>
+			<pre>	<p>			b) set j = j+1</p></pre>
+			<pre>	<p>			c) set K = K+1</p></pre>
+			<pre>	<p>		[end of WHILE ]</p></pre>
+			<pre>	<p>Step 7: Repeat FOR i= LOW to HIGH</p></pre>
+			<pre>	<p>			set A[i] = C[i]</p></pre>
+			<pre>	<p>		[end of FOR i ]</p></pre>
+			<pre>	<p>Step 8: Exit</p></pre>
+			</div>
+			<div class="item quick" style="display:none;">
+			<div class="title"><p>Sorting</p> QUICK SORTING</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/SORTING%20final/QuickSort/index.html'">
+					QUICK</button>
+			</div>
+				
+			</div>
+			<div class="item brick" style="display:none;">
+			<div class="title"><p>Sorting</p> BRICK SORTING</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/SORTING%20final/BRICK/index.html'">
+					BRICK</button>
+				</div>
+			<pre><p>Step 1: Repeat step 2 WHILE(!sorted)</p></pre>
+			<pre><p>Step 2: Set sorted=true </p></pre>
+			<pre><p>Step 3: Repeat step 3 FOR i=1 to n by 2</p></pre>
+			<pre><p>Step 4: IF list[i]>lidt[i+1]</p></pre>
+			<pre><p>Step 5: temp=list[i],list[i]=list[i+1],list[i]=temmp,sorted=false</p></pre>
+			<pre><p>		[end of IF ]</p></pre>
+			<pre><p>	  [end of FOR i ]</p></pre>	
+			<pre><p>	[end of WHILE]</p></pre>
+			<pre><p>Step 6: Exit</p></pre>
+			</div>
+			<div class="item shell" style="display:none;">
+			<div class="title"><p>Sorting</p> SHELL SORTING</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/SORTING%20final/Shell%20Sort/index.html'">
+					SHELL</button>
+			</div>
+			<pre><p>Step 1: Repeat step 2 WHILE(gap<length(array)/3)</p></pre>
+			<pre><p>Step 2: Set gap=(interval*3)+1 </p></pre>
+			<pre><p>		[end of WHILE]</p></pre>
+			<pre><p>Step 3: Repeat step 4 WHILE gap>0</p></pre>
+			<pre><p>Step 4: Repeat step 5 FOR outer=gap;outer<length(array) by outer++</p></pre>
+			<pre><p>Step 5: insertion_val=array[outer],inner=outer</p></pre>
+			<pre><p>Step 6: Repeat step 4 WHILE inner>gap-1 and array[inner-gap]>=insertion_val</p></pre>
+			<pre><p>Step 7: array[inner]=array[inner-gap],inner=inner-gap</p></pre>
+			<pre><p>		[end of WHILE ]</p></pre>
+			<pre><p>Step 8: array[inner]=insertion_val</p></pre>
+			<pre><p>	  [end of FOR outer ]</p></pre>	
+			<pre><p>Step 9: gap=(gap-1)/3</p></pre>
+			<pre><p>		[end of WHILE ]</p></pre>
+			<pre><p>Step 10: Exit</p></pre>	
+			</div>
+		 </div>
+	</div>
+</div>
+
+
+<script src="algorithm.js"></script>
+</body>
+</html>

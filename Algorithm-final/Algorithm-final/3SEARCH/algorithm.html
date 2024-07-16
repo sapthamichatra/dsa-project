@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Search</title>
+<link rel="stylesheet" type="text/css" href="algorithm.css">
+</head>
+<body>
+<!--BUTTON CODE <- AND ->-->
+<div class="nextprev">
+<ul>
+	<li class="prev"><a href="file:///C:/final/AA-Home/statpage.html"><span><a href="file:///C:/final/AA-Home/statpage.html"></a></span></li>
+	<li class="next"><a href="file:///C:/final/Algorithm-final/4STACK/algorithm.html"><span><a href="file:///C:/final/Algorithm-final/4STACK/algorithm.html"></a></span></li> 
+</ul>
+</div>
+<!--BUTTON CODE <- AND ->-->
+<div class="wrapper">
+	<div class="wrapper_left">
+		<ul>
+			<li data-li="linear"class="active">
+				<p>Linear </p>
+			</li>
+			<li data-li="binary">
+				<p>Binary</p>
+			</li>
+			<li data-li="exponential">
+				<p>Exponential</p>
+			</li>
+			<li data-li="interpolation">
+				<p>Interpolation</p>
+			</li>
+			<li data-li="jump">
+				<p>Jump</p>
+			</li>
+			<li data-li="ternary">
+				<p>Ternary</p>
+			</li>
+			
+			
+		</ul>
+	</div>
+	<div class="wrapper_right">
+		
+		 <div class="container">
+			<div class="item linear">
+			<div class="title"><p>Searching</p> LINEAR SEARCH</div>
+				<div class="item_info">
+					<div class="img"></div>
+					
+					<button type="button"onclick="location.href='file:///C:/final/search/LINEAR%20SEARCH/index.html'">
+					LINEAR SEARCH</button>
+				</div>
+			<pre>	<p>Step 1: Set FOUND = 0</p></pre>
+			<pre>	<p>Step 2: Repeat Step 3 FOR i = 1 to n</p></pre>
+			<pre>	<p>Step 3: IF LA[i] = ITEM then</p></pre>
+			<pre>	<p>		a)set FOUND = 1</p></pre>
+			<pre>	<p>		b)set LOC = 1</p></pre>
+			<pre>	<p>		c)Go to Step 4</p></pre>
+			<pre>	<p>				[end of IF ]</p></pre>
+			<pre>	<p>			[end of FOR ]</p></pre>
+			<pre>	<p>Step 4: IF FOUND = 1 then</p></pre>
+			<pre>	<p>			WRRITE :"ITEM IS FOUND ": LOC</p></pre>
+			<pre>	<p>		ELSE</p></pre>
+			<pre>	<p>			WRRITE :"ITEM IS NOT FOUND"</p></pre>
+			<pre>	<p>Step 8: Exit</p></pre>	
+			</div>
+			<div class="item binary" style="display:none;">
+			<div class="title"><p>Searching</p>BINARY SEARCH</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/search/BINARY%20SEARCH/index.html'">
+					BINARY SEARCH</button>
+				</div>
+			<pre>	<p>Step 1: [Initialize segment variable]</p></pre>
+			<pre>	<p>			Set BEG = LB, END=UB and MID=INT(BEG+END/2)</p></pre>
+			<pre>	<p>Step 2: Repeat Step 3 and 4 WHILE BEG <= END </p></pre>
+			<pre>	<p>Step 3: IF ITEM IS < DATA[MID] then</p></pre>
+			<pre>	<p>			set END = MID -1</p></pre>
+			<pre>	<p>		ELSE IF ITEM = DATA[MID] then</p> </pre>
+			<pre>	<p>			set LOC = MID</p></pre>
+			<pre>	<p>		Goto Step 5</p></pre>
+			<pre>	<p>		ELSE </p></pre>
+			<pre>	<p>			set BEG = MID+1</p></pre>
+			<pre>	<p>				[end of IF ]</p></pre>
+			<pre>	<p>Step 4: set MID = INT(BEG+END/2)</p></pre>
+			<pre>	<p>				[end of step 2 loop ]</p></pre>
+			<pre>	<p>Step 5: IF DATA[MID]=ITEM then</p></pre>
+			<pre>	<p>			WRRITE :"ITEM IS FOUND ": LOC</p></pre>
+			<pre>	<p>		else</p></pre>
+			<pre>	<p>			set LOC = NULL</p></pre>
+			<pre>	<p>			WRRITE :"ITEM IS NOT FOUND"</p></pre>
+			<pre>	<p>		[end of IF ]</p></pre>
+			<pre>	<p>Step 8: Exit</p></pre>	
+			</div>
+			<div class="item exponential" style="display:none;">
+			<div class="title"><p>Searching</p>EXPONENTIAL SEARCH</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/search/EXPONETIAL%20SEARCH/index.html'">
+					EXPONENTIAL SEARCH</button>
+				</div>
+			<p> DDDDDDDDDDDDDDDDDsoftware requiby developers to achieve desired goals and also minimizes the</p>
+				<p>development cvents are evaluated.</p>
+				
+			</div>
+			<div class="item interpolation" style="display:none;">
+			<div class="title"><p>Searching</p>INTERPOLATION SEARCH</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/search/INTERPOLATION%20SEARCH/index.html'">
+					INTERPOLATION SEARCH</button>
+				</div>
+			<pre>	<p>Step 1: Repeat Step 2 and Step 5 FOR i=1 to n</p></pre>
+			<pre>	<p>Step 2: set TEMP = A[i] </p></pre>
+			<pre>	<p>Step 3: Repeat Step 4 FOR j= i-1 to 1 by -1</p></pre>
+			<pre>	<p>Step 4: IF (A[j] > TEMP)</p></pre>
+			<pre>	<p>		set A[j+1]= A[j]</p></pre>
+			<pre>	<p>	else </p></pre>
+			<pre>	<p>		Goto Step 5</p></pre>
+			<pre>	<p>		[end of IF ]</p></pre>
+			<pre>	<p>			[end of FOR j ]</p></pre>
+			<pre>	<p>Step 5: set A[j+1]= TEMP</p></pre>
+			<pre>	<p>		[end of FOR i ]</p></pre>
+			<pre>	<p>Step 8: Exit</p></pre>
+				
+			</div>
+			<div class="item jump" style="display:none;">
+			<div class="title"><p>Searching</p>JUMP SEARCHING</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/search/JUMP%20SEARCH/index.html'">
+					JUMP SEARCH</button>
+				</div> 
+				<p> DDDDDDDDDDDDDDDDDsoftware requiby developers to achieve desired goals and also minimizes the</p>
+				<p>development cvents are evaluated.</p>
+			</div>
+			<div class="item ternary" style="display:none;">
+			<div class="title"><p>Searching</p>TERNARY SEARCHING</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/search/TERNARY%20SEARCH/index.html'">
+					TERNARY SEARCH</button>
+				</div>
+				<p> EEEEEEEEEEEEEEEEEEEEEEEsoftware requirements specification (SRS) is a comprehensive description of the intended purpose and environment for
+				software under development. The SRS fully describes what the software will do and how it will be expected to perform.
+				An SRS minimizes the time and effort required by developers to achieve desired goals and also minimizes the</p>
+				<p>development cost. A good SRS defines how an application will interact with system hardware, other programs and human users in a 
+				wide variety of real-world situations. Parameters such as operating speed, response time, availability, portability, maintainability, 
+				footprint, security and speed of recovery from adverse events are evaluated.</p>
+			</div>
+			
+			
+			
+		 </div>
+	</div>
+</div>
+
+
+<script src="algorithm.js"></script>
+</body>
+</html>

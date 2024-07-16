@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Search</title>
+<link rel="stylesheet" type="text/css" href="algorithm.css">
+</head>
+<body>
+<!--BUTTON CODE <- AND ->-->
+<div class="nextprev">
+<ul>
+	<li class="prev"><a href="file:///C:/final/AA-Home/statpage.html"><span><a href="file:///C:/final/AA-Home/statpage.html"></a></span></li>
+	<li class="next"><a href="file:///C:/final/Algorithm-final/4STACK/algorithm.html"><span><a href="file:///C:/final/Algorithm-final/4STACK/algorithm.html"></a></span></li> 
+</ul>
+</div>
+<!--BUTTON CODE <- AND ->-->
+<div class="wrapper">
+	<div class="wrapper_left">
+		<ul>
+			<li data-li="linear"class="active">
+				<p>Linear </p>
+			</li>
+			<li data-li="binary">
+				<p>Binary</p>
+			</li>
+			<li data-li="exponential">
+				<p>Exponential</p>
+			</li>
+			<li data-li="interpolation">
+				<p>Interpolation</p>
+			</li>
+			<li data-li="jump">
+				<p>Jump</p>
+			</li>
+			<li data-li="ternary">
+				<p>Ternary</p>
+			</li>
+			
+			
+		</ul>
+	</div>
+	<div class="wrapper_right">
+		
+		 <div class="container">
+			<div class="item linear">
+			<div class="title"><p>Searching</p> LINEAR SEARCH</div>
+				<div class="item_info">
+					<div class="img"></div>
+					
+					<button type="button"onclick="location.href='file:///C:/final/search/LINEAR%20SEARCH/index.html'">
+					Let's visulize</button>
+				</div>
+			<pre>	<p>Step 1: Set FOUND = 0</p></pre>
+			<pre>	<p>Step 2: Repeat Step 3 FOR i = 1 to n</p></pre>
+			<pre>	<p>Step 3: IF LA[i] = ITEM then</p></pre>
+			<pre>	<p>		a)set FOUND = 1</p></pre>
+			<pre>	<p>		b)set LOC = 1</p></pre>
+			<pre>	<p>		c)Go to Step 4</p></pre>
+			<pre>	<p>				[end of IF ]</p></pre>
+			<pre>	<p>			[end of FOR ]</p></pre>
+			<pre>	<p>Step 4: IF FOUND = 1 then</p></pre>
+			<pre>	<p>			WRRITE :"ITEM IS FOUND ": LOC</p></pre>
+			<pre>	<p>		ELSE</p></pre>
+			<pre>	<p>			WRRITE :"ITEM IS NOT FOUND"</p></pre>
+			<pre>	<p>Step 8: Exit</p></pre>
+<br>
+<br>			
+<pre><p>a.	Input: Array of numbers, element to be searched.</pre></p>
+<pre><p>b.	Process: This searching technique takes the array of numbers 
+and searches the element linearly if found displays the position of element found.</pre></p>
+<pre><p>c.	Output: Displays the searched element in the bar graph with different color and 
+also displays the position of the element found, time and space complexity.</pre></p>
+
+			</div>
+			<div class="item binary" style="display:none;">
+			<div class="title"><p>Searching</p>BINARY SEARCH</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/search/BINARY%20SEARCH/index.html'">
+					Let's visulize</button>
+				</div>
+			<pre>	<p>Step 1: [Initialize segment variable]</p></pre>
+			<pre>	<p>			Set BEG = LB, END=UB and MID=INT(BEG+END/2)</p></pre>
+			<pre>	<p>Step 2: Repeat Step 3 and 4 WHILE BEG <= END </p></pre>
+			<pre>	<p>Step 3: IF ITEM IS < DATA[MID] then</p></pre>
+			<pre>	<p>			set END = MID -1</p></pre>
+			<pre>	<p>		ELSE IF ITEM = DATA[MID] then</p> </pre>
+			<pre>	<p>			set LOC = MID</p></pre>
+			<pre>	<p>		Goto Step 5</p></pre>
+			<pre>	<p>		ELSE </p></pre>
+			<pre>	<p>			set BEG = MID+1</p></pre>
+			<pre>	<p>				[end of IF ]</p></pre>
+			<pre>	<p>Step 4: set MID = INT(BEG+END/2)</p></pre>
+			<pre>	<p>				[end of step 2 loop ]</p></pre>
+			<pre>	<p>Step 5: IF DATA[MID]=ITEM then</p></pre>
+			<pre>	<p>			WRRITE :"ITEM IS FOUND ": LOC</p></pre>
+			<pre>	<p>		else</p></pre>
+			<pre>	<p>			set LOC = NULL</p></pre>
+			<pre>	<p>			WRRITE :"ITEM IS NOT FOUND"</p></pre>
+			<pre>	<p>		[end of IF ]</p></pre>
+			<pre>	<p>Step 8: Exit</p></pre>
+			<br>
+			<br>
+<pre><p>a.	Input: Array of numbers, element to be searched.</pre></p>
+<pre><p>b.	Process: This technique initially sorts the given array if 
+searched element is greater than middle element then it searches at right side otherwise left.</pre></p>
+<pre><p>c.	Output: Displays the searched element in the bar graph with different color 
+and also displays the position of the element found, time and space complexity.</pre></p>
+			
+			</div>
+			<div class="item exponential" style="display:none;">
+			<div class="title"><p>Searching</p>EXPONENTIAL SEARCH</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/search/EXPONETIAL%20SEARCH/index.html'">
+					Let's visulize</button>
+				</div>
+<pre><p>Step 1: Given a sorted array arr[] and a target element x.</pre></p>
+<pre><p>Step 2: If the first element of arr[] is equal to x, return 0 (target found).</pre></p>
+<pre><p>Step 3: Set a variable 'bound' to 1 and initialize 'left' and 'right' to 0 and min(2^bound, n-1) respectively.</pre></p>
+<pre><p>   (where n is the length of the array)</pre></p>
+<pre><p>Step 4: While arr[right] < x and right < n:</pre></p>
+<pre><p>    a. Update 'left' to 'right'.</pre></p>
+<pre><p>    b. Double the value of 'bound'.</pre></p>
+<pre><p>    c. Update 'right' to min(2^bound, n-1).</pre></p>
+<pre><p>Step 5: Perform a binary search between 'left' and 'right':</pre></p>
+<pre><p>    a. If 'left' is greater than 'right', the target element is not present in the array. Return -1 (target not found).</pre></p>
+<pre><p>    b. Set a variable 'mid' to the middle index between 'left' and 'right'.</pre></p>
+<pre><p>    c. If arr[mid] is equal to x, return 'mid' (target found).</pre></p>
+<pre><p>    d. If arr[mid] is less than x, update 'left' to 'mid + 1' and repeat step 5.</pre></p>
+<pre><p>    e. If arr[mid] is greater than x, update 'right' to 'mid - 1' and repeat step 5.</pre></p>
+<pre><p>Step 6: If the algorithm hasn't returned by this point, the target element is not present in the array. Return -1 (target not found).</pre></p>
+<pre><p>	</pre></p>		
+<pre><p>	</pre></p>
+<pre><p>a.	Input: Array of numbers, key element.</pre></p>
+<pre><p>b.	Process: It searches for an element in a sorted array by jumping 2^I 
+elements every iteration where I represents the value of loop control variable, 
+and then verifying if search element is present between last jump and current jump.</pre></p>
+<pre><p>c.	Output: Displays the searched element along the sorted bar graph also the time and 
+space complexity.</pre></p>
+
+				
+			</div>
+			<div class="item interpolation" style="display:none;">
+			<div class="title"><p>Searching</p>INTERPOLATION SEARCH</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/search/INTERPOLATION%20SEARCH/index.html'">
+					Let's visulize</button>
+				</div>
+			<pre>	<p>Step 1: Repeat Step 2 and Step 5 FOR i=1 to n</p></pre>
+			<pre>	<p>Step 2: set TEMP = A[i] </p></pre>
+			<pre>	<p>Step 3: Repeat Step 4 FOR j= i-1 to 1 by -1</p></pre>
+			<pre>	<p>Step 4: IF (A[j] > TEMP)</p></pre>
+			<pre>	<p>		set A[j+1]= A[j]</p></pre>
+			<pre>	<p>	else </p></pre>
+			<pre>	<p>		Goto Step 5</p></pre>
+			<pre>	<p>		[end of IF ]</p></pre>
+			<pre>	<p>			[end of FOR j ]</p></pre>
+			<pre>	<p>Step 5: set A[j+1]= TEMP</p></pre>
+			<pre>	<p>		[end of FOR i ]</p></pre>
+			<pre>	<p>Step 8: Exit</p></pre>
+			<br>
+			<br>
+			
+<pre><p>a.	Input: Array of numbers, key element.</pre></p>
+<pre><p>b.	Process: : Interpolation search is an algorithm for searching for a key 
+in an array that has been ordered by numerical values assigned to the keys (key values).</pre></p>
+<pre><p>c.  Output: Displays the searched element along the sorted bar graph also the time 
+and space complexity.</pre></p>
+
+				
+			</div>
+			<div class="item jump" style="display:none;">
+			<div class="title"><p>Searching</p>JUMP SEARCHING</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/search/JUMP%20SEARCH/index.html'">
+					Let's visulize</button>
+				</div> 
+<pre><p>Step 1: Given a sorted array arr[] and a target element x.
+<pre><p>Step 2: Set variables 'n' to the length of arr[], 'step' to the square root of 'n', 'prev' to 0, and 'blockSize' to the square root of 'n'.</pre></p>
+<pre><p>Step 3: While arr[min(step, n)-1] < x:</pre></p>
+<pre><p>     	a. Update 'prev' to 'step'.</pre></p>
+<pre><p>     	b. Update 'step' to the square root of 'step' (decreasing the step size).</pre></p>
+<pre><p>     	c. If 'prev' is greater than or equal to 'n', the target element is not present in the array. Return -1 (target not found).</pre></p>
+<pre><p>Step 4: Perform a linear search from 'prev' to min(step, n) to find the target element:</pre></p>
+<pre><p>Step 5: Perform a linear search from 'prev' to min(step, n) to find the target element:</pre></p>
+<pre><p>     	a. If arr[i] is equal to x, return 'i' (target found).</pre></p>
+<pre><p>Step 6: If the algorithm hasn't returned by this point, the target element is not present in the array. Return -1 (target not found).</pre></p>				
+				<br>
+				<br>
+<pre><p>a.	Input: Array of numbers, key element</pre></p>
+<pre><p>b.	Process:	Jump search technique also works for ordered lists. It creates a block and 
+tries to find the element in that block. If the item is not in the block, it shifts the entire block. 
+The block size is based on the size of the list. If the size of the list is n then block size will be √n.</pre></p>
+<pre><p>c.	Output: Displays the searched element along the sorted bar graph also the time and 
+space complexity.</pre></p>
+
+			</div>
+			<div class="item ternary" style="display:none;">
+			<div class="title"><p>Searching</p>TERNARY SEARCHING</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/search/TERNARY%20SEARCH/index.html'">
+					Let's visulize</button>
+				</div>
+<pre><p>Step 1: Given a sorted array arr[] and a target element x.</pre></p>
+<pre><p>Step 2: Set variables 'left' to 0 and 'right' to n-1, where n is the length of arr[].</pre></p>
+<pre><p>Step 3: While 'left' is less than or equal to 'right':</pre></p>
+<pre><p>	     a. Set 'mid1' to 'left' + floor((right - left) / 3).</pre></p>
+<pre><p>	     b. Set 'mid2' to 'right' - floor((right - left) / 3).</pre></p>
+<pre><p>	     c. If arr[mid1] is equal to x, return 'mid1' (target found).</pre></p>
+<pre><p>	     d. If arr[mid2] is equal to x, return 'mid2' (target found).</pre></p>
+<pre><p>	     e. If x is less than arr[mid1], update 'right' to 'mid1 - 1'.</pre></p>
+<pre><p>	     f. If x is greater than arr[mid2], update 'left' to 'mid2 + 1'.</pre></p>
+<pre><p>	     g. Otherwise, set 'left' to 'mid1 + 1' and 'right' to 'mid2 - 1'.</pre></p>
+<pre><p>Step 4: If the algorithm hasn't returned by this point, the target element is not present in the array. Return -1 (target not found).</pre></p>
+				<br>
+				<br>
+<pre><p>a.	Input: Array of numbers, key element</pre></p>
+<pre><p>b.	Process: Here the array elements are divided into 3 groups within 
+the key element is searched.</pre></p>
+<pre><p>c.	Output: Displays the searched element along the sorted bar graph also 
+the time and space complexity.</pre></p>
+
+			</div>
+			
+			
+			
+		 </div>
+	</div>
+</div>
+
+
+<script src="algorithm.js"></script>
+</body>
+</html>

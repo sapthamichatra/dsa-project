@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Queue</title>
+<link rel="stylesheet" type="text/css" href="algorithm.css">
+</head>
+<body>
+<!--BUTTON CODE <- AND ->-->
+<div class="nextprev">
+<ul>
+	<li class="prev"><a href="file:///C:/final/AA-Home/statpage.html"><span><a href="file:///C:/final/AA-Home/statpage.html"></a></span></li>
+	<li class="next"><a href="file:///C:/final/Algorithm-final/6LINKEDLIST/algorithm.html"><span><a href="file:///C:/final/Algorithm-final/6LINKEDLIST/algorithm.html"></a></span></li> 
+</ul>
+</div>
+<!--BUTTON CODE <- AND ->-->
+<div class="wrapper">
+	<div class="topbar">
+		<ul>
+			<li data-li="array"class="active" onclick="array();">
+				<p>Array implementation</p>
+			</li>
+			<li data-li="linkedlist" onclick="linked();">
+				<p>Linked list Implementation</p>
+			</li>
+			
+			<li data-li="circular" onclick="circular();">
+				<p>Circular Queue</p>
+			</li>
+			
+			
+		</ul>
+	</div>
+	<div class="wrapper_left">
+		<ul>
+			<li data-li="arrayin"class="active" id="array1">
+				<p>Queue Array implementation( INSERTION )</p>
+			</li>
+			<li data-li="arraydel" id="array2">
+				<p>Queue Array implementation( DELETION )</p>
+			</li>
+			<li data-li="listin" id="linked1">
+				<p>Queue Linked list Implementation( INSERTION )</p>
+			</li>
+			<li data-li="listdel" id="linked2">
+				<p>Queue Linked list Implementation( DELETION )</p>
+			</li>
+			<li data-li="circularin"id="circular1">
+				<p>Circular Queue( INSERTION )</p>
+			</li>
+			<li data-li="circulardel" id="circular2">
+				<p>Circular Queue( DELETION )</p>
+			</li>
+			
+			
+		</ul>
+	</div>
+	<div class="wrapper_right">
+		
+		 <div class="container">
+			<div class="item arrayin">
+			<div class="title"><p>Queue</p>Array implementation( INSERTION )</div>
+				<div class="item_info">
+					<div class="img"></div>
+					
+					<button type="button"onclick="location.href='file:///C:/final/Queue%20Final/QUEUE/index%20(2).html'">
+					INSERTION</button>
+				</div>
+			<pre>	<p>Step 1: [Queue already filled?]</p></pre>
+			<pre>	<p>			IF[REAR==MAXSIZE) then</p></pre>
+			<pre>	<p>				Write:”Overflow” and RETURN</p></pre>
+			<pre>	<p>			[End of IF]</p></pre>
+			<pre>	<p>Step 2: Set REAR:=REAR+1</p></pre>
+			<pre>	<p>Step 3: QUEUE[REAR]:=ITEM</p></pre>
+			<pre>	<p>Step 4: IF(FRONT==0) then</p></pre>
+			<pre>	<p>				Set FRONT:=1</p></pre>
+			<pre>	<p>			[End of IF]</p></pre>
+			<pre>	<p>Step 5: RETURN</p></pre>
+			
+			</div>
+			<div class="item arraydel" style="display:none;">
+			<div class="title"><p>Queue</p>Array implementation( DELETION )</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/Queue%20Final/QUEUE/index%20(2).html'">
+					DELETION</button>
+				</div>
+			<pre>	<p>Step 1: [Check queue is empty?]</p></pre>
+			<pre>	<p>			IF[FRONT==0) then</p></pre>
+			<pre>	<p>				Write:”Underflow” and RETURN</p></pre>
+			<pre>	<p>			[End of IF]</p></pre>
+			<pre>	<p>Step 2: Set ITEM:=QUEUE[FRONT]</p></pre>
+			<pre>	<p>Step 3: IF(FRONT=REAR)then</p></pre>
+			<pre>	<p>				a. Set FRONT:=1</p></pre>
+			<pre>	<p>				b. Set FRONT:=0</p></pre>
+			<pre>	<p>			ELSE</p></pre>
+			<pre>	<p>				Set FRONT:=FRONT+1</p></pre>
+			<pre>	<p>			[End of IF]</p></pre>
+			<pre>	<p>Step 4: RETURN</p></pre>
+			
+			</div>
+			<div class="item listin" style="display:none;">
+			<div class="title"><p>Queue</p>Linked list Implementation( INSERTION )</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/Queue%20Final/linked%20queue1/index.html'">
+					INSERTION</button>
+				</div>
+			<pre>	<p>Step 1: Create a new NODE set NEWNODE = new NODE</p></pre>
+			<pre>	<p>Step 2: INPUT ITEM</p></pre>
+			<pre>	<p>Step 3: Set NEWNODE -> DATA = ITEM</p></pre>
+			<pre>	<p>Step 4: Set NEWNODE -> LINK = NULL</p></pre>
+			<pre>	<p>Step 5: IF(FRONT=NULL)</p></pre>
+			<pre>	<p>				a)Set FRONT:=NEWNODE</p></pre>
+			<pre>	<p>				b)Set REAR:=NEWNODE</p></pre>
+			<pre>	<p>			ELSE</p></pre>
+			<pre>	<p>				a)Set REAR->LINK:=NEWNODE</p></pre>
+			<pre>	<p>				b)Set REAR:=NEWNODE</p></pre>
+			<pre>	<p>			[End of IF]</p></pre>
+			<pre>	<p>Step 6: Exit</p></pre>
+			
+			</div>
+			<div class="item listdel" style="display:none;">
+			<div class="title"><p>Queue</p>Linked list Implementation( DELETION )</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/Queue%20Final/linked%20queue1/index.html'">
+					DELETION</button>
+				</div>
+			<pre>	<p>Step 1: IF( FRONT = NULL) then</p></pre>
+			<pre>	<p>				Write "QUEUE IS EMPTY"</p></pre>
+			<pre>	<p>			ELSE</p></pre>
+			<pre>	<p>				a)set ITEM:=FRONT->DATA</p></pre>
+			<pre>	<p>				b)set FRONT:=FRONT->LINK	</p></pre>
+			<pre>	<p>				c)WRITE: “DELETE THE ITEM” ITEM</p></pre>
+			<pre>	<p>			[end of IF ]</p></pre>
+			<pre>	<p>Step 2: Exit	</p></pre>
+			
+				
+			</div>
+			<div class="item circularin" style="display:none;">
+			<div class="title"><p>Queue</p>Circular Queue( INSERTION )</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/Queue%20Final/cq/index.html'">
+					INSERTION</button>
+				</div> 
+			<pre>	<p>Step 1: IF(FRONT:=(REAR+1)%MAXSIZE)then</p></pre>
+			<pre>	<p>				Write:”CQueue is full” and RETURN</p></pre>
+			<pre>	<p>			[End of IF]</p></pre>
+			<pre>	<p>Step 2: Set REAR:=(REAR+1)%MAXSIZE</p></pre>
+			<pre>	<p>Step 3: Set CQUEUE[REAR]:=ITEM</p></pre>
+			<pre>	<p>Step 4: IF(FRONT==-1) then</p></pre>
+			<pre>	<p>				Set FRONT:=0</p></pre>
+			<pre>	<p>			[End of IF]</p></pre>
+			<pre>	<p>Step 5: RETURN</p></pre>
+			<pre>	<p></p></pre>
+			<pre>	<p></p></pre>
+			<pre>	<p></p></pre>
+			<pre>	<p></p></pre>
+			<pre>	<p></p></pre>
+				
+			</div>
+			<div class="item circulardel" style="display:none;">
+			<div class="title"><p>Queue</p>Circular Queue( DELETION )</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/Queue%20Final/cq/index.html'">
+					DELETION</button>
+				</div>
+			<pre>	<p>Step 1:	IF[FRONT=-1) then</p></pre>
+			<pre>	<p>				Write:”Element is empty” and RETURN</p></pre>
+			<pre>	<p>			[End of IF]</p></pre>
+			<pre>	<p>Step 2: Set ITEM:=CQUEUE[FRONT]</p></pre>
+			<pre>	<p>Step 3: IF(FRONT=REAR)then</p></pre>
+			<pre>	<p>				a.Set FRONT:=-1</p></pre>
+			<pre>	<p>				b. Set FRONT:=-1</p></pre>
+			<pre>	<p>			ELSE</p></pre>
+			<pre>	<p>				Set FRONT:=(FRONT+1)%MAXSIZE</p></pre>
+			<pre>	<p>			[End of IF]</p></pre>
+			<pre>	<p>Step 4: RETURN</p></pre>
+			<pre>	<p></p></pre>
+			<pre>	<p></p></pre>
+			<pre>	<p></p></pre>
+				
+			</div>
+			
+			
+			
+		 </div>
+	</div>
+</div>
+
+
+<script src="algorithm.js"></script>
+</body>
+</html>

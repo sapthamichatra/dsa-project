@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Linkedlist</title>
+<link rel="stylesheet" type="text/css" href="algorithm.css">
+</head>
+<body>
+<!--BUTTON CODE <- AND ->-->
+<div class="nextprev">
+<ul>
+	<li class="prev"><a href="file:///C:/final/AA-Home/statpage.html"><span><a href="file:///C:/final/AA-Home/statpage.html"></a></span></li>
+	<li class="next"><a href="file:///C:/final/Algorithm-final/7GRAPH/algorithm.html"><span><a href="file:///C:/final/Algorithm-final/7GRAPH/algorithm.html"></a></span></li> 
+</ul>
+</div>
+<!--BUTTON CODE <- AND ->-->
+<div class="wrapper">
+	<div class="topbar">
+		<ul>
+			<li data-li="array"class="active" onclick="singly();">
+				<p>Singly Linkedlist</p>
+			</li>
+			<li data-li="linkedlist" onclick="linked();">
+				<p>Doubbly Linkedlist</p>
+			</li>
+			
+<!--			<li data-li="circular" onclick="circular();">
+				<p>Circular Linkedlist</p>
+			</li>
+			<li data-li="circu" onclick="circular1();">
+				<p>Doubly Circular Linkedlist</p>
+			</li>-->
+			
+			
+		</ul>
+	</div>
+	<div class="wrapper_left">
+		<ul>
+			<li data-li="singlybeg"class="active" id="singly1">
+				<p>Insertion at beginning</p>
+			</li>
+			<li data-li="singlyend" id="singly2">
+				<p>Insertion at end</p>
+			</li>
+			<li data-li="singlypos" id="singly3">
+				<p>Insertion at position</p>
+			</li>
+			<li data-li="singlydelbeg" id="singly4">
+				<p>Deletion at beginning</p>
+			</li>
+			<li data-li="singlydelend"id="singly5">
+				<p>Deletion at end</p>
+			</li>
+			<li data-li="singlydelpos" id="singly6">
+				<p>Deletion at specified position</p>
+			</li>
+			<li data-li="singlydelele" id="singly13">
+				<p>Deletion on element</p>
+			</li>
+			<!--................................................ Doubbly Linkedlist .......................................... -->
+			<li data-li="singlybeg1"class="active" id="singly7">
+				<p>Insertion at beginning</p>
+			</li>
+			<li data-li="singlyend1" id="singly8">
+				<p>Insertion at end</p>
+			</li>
+			<li data-li="singlypos1" id="singly9">
+				<p>Insertion at position</p>
+			</li>
+			<li data-li="singlydelbeg1" id="singly10">
+				<p>Deletion at beginning</p>
+			</li>
+			<li data-li="singlydelend1"id="singly11">
+				<p>Deletion at end</p>
+			</li>
+			<li data-li="singlydelpos1" id="singly12">
+				<p>Deletion at specified position</p>
+			</li>
+			<li data-li="singlydelele1" id="singly14">
+				<p>Deletion on element</p>
+			</li>
+			<!--................................................ Linkedlist .......................................... 
+			
+			<li data-li="singlybeg2"class="active" id="singly13">
+				<p>Insertion at beginning</p>
+			</li>
+			<li data-li="singlyend2" id="singly14">
+				<p>Insertion at end</p>
+			</li>
+			<li data-li="singlypos2" id="singly15">
+				<p>Insertion at position</p>
+			</li>
+			<li data-li="singlydelbeg2" id="singly16">
+				<p>Deletion at beginning</p>
+			</li>
+			<li data-li="singlydelend2"id="singly17">
+				<p>Deletion at end</p>
+			</li>
+			<li data-li="singlydelpos2" id="singly18">
+				<p>Deletion at position</p>
+			</li>
+			<!--................................................ Doubbly Linkedlist ..........................................
+			
+			<li data-li="singlybeg3"class="active" id="singly19">
+				<p>Insertion at beginning</p>
+			</li>
+			<li data-li="singlyend3" id="singly20">
+				<p>Insertion at end</p>
+			</li>
+			<li data-li="singlypos3" id="singly21">
+				<p>Insertion at position</p>
+			</li>
+			<li data-li="singlydelbeg3" id="singly22">
+				<p>Deletion at beginning</p>
+			</li>
+			<li data-li="singlydelend3"id="singly23">
+				<p>Deletion at end</p>
+			</li>
+			<li data-li="singlydelpos3" id="singly24">
+				<p>Deletion at position</p>
+			</li>-->
+		</ul>
+	</div>
+	<div class="wrapper_right">
+		
+		 <div class="container">
+			<div class="item singlybeg">
+			
+			<div class="title"><p>Singly Linkedlist</p>Insertion at beginning</div>
+				<div class="item_info">
+					<div class="img"></div>
+					
+					<button type="button"onclick="location.href='file:///C:/final/Linked%20list/SINGLY%20LINKED%20LIST/index.html'">
+					Let's visualize</button>
+				</div>
+			<pre>	<p>Step 1: Create a NODE SET newnode:= new NODE;</p></pre>
+			<pre>	<p>Step 2: SET newnode->data=element;</p></pre>
+			<pre>	<p>Step 3: IF(head==NULL)THEN</p></pre>
+			<pre>	<p>		   	a) SET head:=newnode;</p></pre>
+			<pre>	<p>		   	b) SET newnode->link:=NULL;</p></pre>
+			<pre>	<p>		   ELSE</p></pre>
+			<pre>	<p>			a)	SET newnode->link:=head;</p></pre>			
+			<pre>	<p> 		b)	SET head:=newnode;</p></pre>
+			<pre>	<p>				[end of IF ]</p></pre>
+			<pre>	<p>Step 4: Exit</p></pre>
+			<pre><p> </p></pre>
+<pre><p> </p></pre>
+<pre><p> </p></pre>
+<pre><p> </p></pre>
+			<pre><p>a.	Input: Node elements</pre></p>
+<pre><p>b.	Process: Insert the node at the beginning of 
+the Singly linked list.</pre></p>
+<pre><p>c.	Output: Displays the Singly linked list with 
+time and space complexity.</pre></p>
+
+			
+			</div>
+			<div class="item singlyend" style="display:none;">
+			<div class="title"><p>Singly Linkedlist</p>Insertion at end</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/Linked%20list/SINGLY%20LINKED%20LIST/index.html'">
+					Let's visualize</button>
+				</div>
+				
+			<pre>	<p>Step 1: Create a NODE SET newnode:= new NODE;</p></pre>
+			<pre>	<p>Step 2: SET newnode->data=element;</p></pre>
+			<pre>	<p>Step 3: SET newnode->link:=NULL</p></pre>
+			<pre>	<p>			IF(head==NULL)THEN</p></pre>
+			<pre>	<p>				a) SET head:=newnode;</p> </pre>
+			<pre>	<p>			ELSE</p></pre>
+			<pre>	<p>				a)	SET temp:=head;</p></pre>
+			<pre>	<p>				b)	REPEAT STEP </p></pre>
+			<pre>	<p>			(i)	WHILE(temp->link!=NULL)</p></pre>
+			<pre>	<p>			(i)	SET temp:=temp->link;</p></pre>
+			<pre>	<p>			[END OF WHILE]</p></pre>
+			<pre>	<p>				c)	SET temp->link:=newnode;</p></pre>
+			<pre>	<p>			[END OF WHILE]</p></pre>
+			<pre>	<p>			[End of If]</p></pre>
+			<pre>	<p>Step 4: Exit</p></pre>	
+			<pre><p> </p></pre>
+<pre><p> </p></pre>
+			<pre><p>a.	Input: Node elements</pre></p>
+<pre><p>b.	Process: Insert the node at the end of the 
+Singly linked list.</pre></p>
+<pre><p>c.	Output: Displays the Singly linked list with 
+time and space complexity.</pre></p>
+
+			
+			</div>
+			<div class="item singlypos" style="display:none;">
+			<div class="title"><p>Singly Linkedlist</p>Insertion at position</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/Linked%20list/SINGLY%20LINKED%20LIST/index.html'">
+					Let's visualize</button>
+				</div>
+			
+			<pre>	<p>Step 1: Create a NODE SET newnode:= new NODE;</p></pre>
+			<pre>	<p>Step 2: SET newnode->data=element;</p></pre>
+			<pre>	<p>Step 3: SET temp:=head;</p></pre>
+			<pre>	<p>Step 4: IF((pos=0)&&(head==NULL))THEN</p></pre>
+			<pre>	<p>				a)SET newnode->link:=NULL;</p> </pre>
+			<pre>	<p>				b)SET head:=newnode;</p></pre>
+			<pre>	<p>				ELSE IF((pos=0)&&(head!=NULL))</p></pre>
+			<pre>	<p>					a)newnode->link=head;</p></pre>
+			<pre>	<p>					b)head:=newnode;</p></pre>
+			<pre>	<p>			ELSE</p></pre>
+			<pre>	<p>				a)REPEAT STEP </p></pre>
+			<pre>	<p>				(i)FOR i=0 TO i<pos-1</p></pre>
+			<pre>	<p>				(i)SET temp:=temp->link;</p></pre>
+			<pre>	<p>					[END OF FOR]</p></pre>
+			<pre>	<p>				b)IF(temp==NULL)THEN</p></pre>	
+			<pre>	<p>					WRITE: “Node in the list are less than position”</p></pre>
+			<pre>	<p>				ELSE<pos-1</p></pre>
+			<pre>	<p>					SET newnode->link:=temp->link;</p></pre>
+			<pre>	<p>					SET temp->link:=newnode;</p></pre>
+			<pre>	<p>				[END OF IF]</p></pre>
+			<pre>	<p>			[END OF IF]</p></pre>
+			<pre>	<p>Step 5: Exit</p></pre>	
+			<pre><p> </p></pre>
+<pre><p> </p></pre>
+			<pre><p>a.	Input: Node elements, position.</pre></p>
+<pre><p>b.	Process: Insert the node at the specific position 
+of the Singly linked list.</pre></p>
+<pre><p>c.	Output: Displays the Singly linked list with 
+time and space complexity.</pre></p>
+
+			</div>
+			<div class="item singlydelbeg" style="display:none;">
+			<div class="title"><p>Singly Linkedlist</p>Deletion at beginning</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/Linked%20list/SINGLY%20LINKED%20LIST/index.html'">
+					Let's visualize</button>
+				</div>
+			<pre>	<p>Step 1: IF(head==NULL)THEN</p></pre>
+			<pre>	<p>				WRITE: “Linked list is empty”</p></pre>
+			<pre>	<p>			ELSE</p></pre>
+			<pre>	<p>				a.	SET temp:= head</p></pre>
+			<pre>	<p>				b.	SET head=head->link;</p></pre>
+			<pre>	<p>				c.	SET ITEM:=temp->data</p></pre>
+			<pre>	<p>				d.	WRITE: ITEM</p></pre>
+			<pre>	<p>				e.	Delete(temp);</p></pre>
+			<pre>	<p>			[END OF IF]</p></pre>
+			<pre>	<p>Step 2: Exit</p></pre>
+			<pre><p> </p></pre>
+<pre><p> </p></pre>
+			<pre><p>a.	Input: Node elements</pre></p>
+<pre><p>b.	Process: Delete the node at the beginning of 
+the Singly linked list.</pre></p>
+<pre><p>c.	Output: Displays the Singly linked list with 
+time and space complexity.</pre></p>
+
+				
+			</div>
+			<div class="item singlydelend" style="display:none;">
+			<div class="title"><p>Singly Linkedlist</p>Deletion at end</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/Linked%20list/SINGLY%20LINKED%20LIST/index.html'">
+					Let's visualize</button>
+				</div> 
+				
+			<pre>	<p>Step 1: IF(head==NULL)THEN</p></pre>
+			<pre>	<p>				WRITE: “Linked list is empty”</p></pre>
+			<pre>	<p>			ELSE</p></pre>
+			<pre>	<p>				a.SET temp1:=NULL</p></pre>
+			<pre>	<p>				b.SET temp2:=head;</p> </pre>
+			<pre>	<p>				c.REPEAT STEP i& ii </p></pre>
+			<pre>	<p>					WHILE(temp2->link!=NULL)</p></pre>
+			<pre>	<p>					(i)SET temp1:=temp2;</p></pre>
+			<pre>	<p>					(ii) SET teemp2:=temp2->link;</p></pre>
+			<pre>	<p>					[END OF WHILE]</p></pre>
+			<pre>	<p>				d.WRITE: “deleted element is:”temp2->data;</p></pre>
+			<pre>	<p>				e.Delete(temp2);</p></pre>
+			<pre>	<p>				f.IF(temp1!=NULL)THEN</p></pre>
+			<pre>	<p>					SET temp1->link:=NULL;</p></pre>
+			<pre>	<p>				  ELSE</p></pre>	
+			<pre>	<p>					SET head:=NULL;</p></pre>
+			<pre>	<p>				[END OF IF]</p></pre>
+			<pre>	<p>			[END OF IF]</p></pre>
+			<pre>	<p>Step 2: Exit</p></pre>	
+			<pre><p> </p></pre>
+<pre><p> </p></pre>
+			<pre><p>a.	Input: Node elements</p></pre>
+<pre><p>b.	Process: Delete the node at the end of 
+the Singly linked list.</p></pre>
+<pre><p>c.	Output: Displays the Singly linked list with 
+time and space complexity.</p></pre>	
+			</div>
+			
+			
+		
+			<div class="item singlydelpos" style="display:none;">
+			<div class="title"><p>Singly Linkedlist</p>Deletion at specfied position</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/Linked%20list/SINGLY%20LINKED%20LIST/index.html'">
+					Let's visualize</button>
+				</div>
+				
+
+<pre><p>Step 1.IF(head==NULL)THEN</pre></p>
+<pre><p>			WRITE: “Linked list is empty”</pre></p>
+<pre><p>		ELSE</pre></p>
+<pre><p>			a)	SET temp1: =NULL</pre></p>
+<pre><p>			b)	SET temp 2: =head;</pre></p>
+<pre><p>			c)	REPEAT STEP i & ii</pre></p> 
+<pre><p>			WHILE (temp2->link! =NULL)</pre></p>
+<pre><p>				(i)SET temp1: =temp2;</pre></p>
+<pre><p>				(ii) SET teemp2: =temp2->link;</pre></p>
+<pre><p>			[END OF WHILE]</pre></p>
+<pre><p>			d)	WRITE: “deleted element is:” temp2->data;</pre></p>
+<pre><p>			e)	Delete(temp2);</pre></p>
+<pre><p>			f)	IF (temp1! =NULL) THEN</pre></p>
+<pre><p>					SET temp1->link: =NULL;</pre></p>
+<pre><p>				ELSE</pre></p>
+<pre><p>					SET head: =NULL;</pre></p>
+<pre><p>				[END OF IF]</pre></p>
+<pre><p>		[END OF IF]</pre></p>
+<pre><p>Step 2: Exit</pre></p>
+<pre><p></pre></p>
+<pre><p></pre></p>
+<pre><p>a.	Input: Element</p></pre>
+<pre><p>b.	Process: Delete the specific element of the 
+Singly linked list.</p></pre>
+<pre><p>c.	Output: Displays the Singly linked list with 
+time and space complexity.</p></pre>
+				
+			</div>
+			
+			<div class="item singlydelele" style="display:none;">
+			<div class="title"><p>Singly Linkedlist</p>Deletion on element</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/Linked%20list/SINGLY%20LINKED%20LIST/index.html'">
+					Let's visualize</button>
+				</div>
+				
+<!-- <pre><p>Step 1: Start at the head of the linked list.</pre></p>
+<pre><p>Step 2: If the head node itself contains the target element:</pre></p>
+<pre><p>   a. Set the head to its next node.</pre></p>
+<pre><p>   b. Return, as the deletion is complete.</pre></p>
+<pre><p>Step 3: Iterate through the linked list while keeping track of the current node and its previous node:</pre></p>
+<pre><p>   a. If the current node contains the target element:</pre></p>
+<pre><p>      - Set the next pointer of the previous node to the next node of the current node, effectively bypassing the current node.</pre></p>
+<pre><p>      - Return, as the deletion is complete.</pre></p>
+<pre><p>   b. Move the previous node and current node pointers to the next nodes.</pre></p>
+<pre><p>Step 4: If the target element is not found in the linked list, it is not present for deletion.</pre></p>
+<pre><p>   - Handle this case accordingly based on the requirements of your implementation.</pre></p> -->
+
+<pre><p>Step1: a.SET START: = FIRST NODE</pre></p>
+<pre><p>		b.IF (START== NULL) THEN</pre></p>
+<pre><p>			WRITE: “list is empty”</pre></p>
+<pre><p>      	[END OF IF]</pre></p>
+<pre><p>		c.	WHILE (START! =NULL)</pre></p>
+<pre><p>			IF(START==ELEMENT) THEN</pre></p>
+<pre><p>				(i)	Delete(START)</pre></p>
+<pre><p>				(ii)SET START:= NEXT NODE</pre></p>
+<pre><p>			[END OF IF]</pre></p>
+<pre><p>		[END OF WHILE]</pre></p>
+<pre><p>Step 2: Exit</pre></p>
+
+<pre><p> </pre></p>
+<pre><p> </pre></p>
+<pre><p>a.	Input: Element</p></pre>
+<pre><p>b.	Process: Delete the specific element of the 
+Singly linked list.</p></pre>
+<pre><p>c.	Output: Displays the Singly linked list with 
+time and space complexity.</p></pre>
+				
+			</div>
+			
+			
+			<!--................................................ Doubbly Linkedlist .......................................... -->
+			
+			
+			
+			
+			<div class="item singlybeg1" style="display:none;">
+			<div class="title"><p>Doubbly Linkedlist</p>Insertion at beginning</div>
+				<div class="item_info">
+					<div class="img"></div>
+					
+					<button type="button"onclick="location.href='file:///C:/final/Linked%20list/DOUBLY%20LINKED%20LIST/index.html'">
+					Let's visualize</button>
+				</div>
+<pre>	<p>Step 1: CREATE A NEW NODE SET NEWNODE:=new NODE</p></pre>
+<pre>	<p>Step 2: INPUT ITEM</p></pre>
+<pre>	<p>Step 3: SET NEWNODE->DATA:=ITEM</p></pre>
+<pre>	<p>Step 4: SET NEWNODE->LEFT:=NULL</p></pre>
+<pre>	<p>Step 5: SET NEWNODE->RIGHT:=NULL</p></pre>												
+<pre>	<p>Step 6: IF(HEAD!=NULL)THEN</p></pre>
+<pre>	<p>			a)	SET NEWNODE->RIGHT:=HEAD</p></pre>
+<pre>	<p>			b)	SET HEAD->LEFT:NEWNODE</p></pre>
+<pre>	<p>		[END OF IF]</p></pre>
+<pre>	<p>Step 7: SET HEAD:=NEWNODE</p></pre>
+<pre>	<p>Step 8: EXIT</p></pre>
+<pre><p>a.	Input: Node elements</p></pre>
+<pre><p>b.	Process: Insert the node at the beginning of 
+the Doubly linked list.</p></pre>
+<pre><p>c.	Output: Displays the Doubly linked list with 
+time and space complexity.</p></pre>  
+
+			
+			</div>
+			<div class="item singlyend1" style="display:none;">
+			<div class="title"><p>Doubbly Linkedlist</p>Insertion at end</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/Linked%20list/DOUBLY%20LINKED%20LIST/index.html'">
+					Let's visualize</button>
+				</div>
+<pre><p>Step 1: CREATE A NEW NODE SET NEWNODE:=new NODE</p></pre>
+<pre><p>Step 2: INPUT ITEM</p></pre>
+<pre><p>Step 3: SET NEWNODE->DATA:=ITEM</p></pre>
+<pre><p>Step 4: SET NEWNODE->LEFT:=NULL</p></pre>
+<pre><p>Step 5: SET NEWNODE->RIGHT:=NULL</p></pre>
+<pre><p>Step 6: IF(HEAD==NULL)THEN</p></pre>
+<pre><p>			a)	SET HEAD:=NEWNODE</p></pre>
+<pre><p>		ELSE</p></pre>
+<pre><p>			a)	SET TEMP:=HEAD</p></pre>
+<pre><p>			b)	REPEAT WHILE(TEMP->RIGHT!=NULL)</p></pre>
+<pre><p>				i)	SET TEMP”=TEMP->RIGHT</p></pre>
+<pre><p>			[END OF WHILE]</p></pre>
+<pre><p>			c)	SET TEMP->RIGHT:=NEWNODE</p></pre>
+<pre><p>			d)	SET NEWNODE->LEFT:TEMP</p></pre>
+<pre><p>		[END OF IF]</p></pre>
+<pre><p>Step 7: EXIT</p></pre>
+<pre><p>a.	Input: Node elements</p></pre>
+<pre><p>b.	Process: Insert the node at the end of the 
+Doubly linked list.</p></pre>
+<pre><p>c.	Output: Displays the Doubly linked list with 
+time and space complexity.</p></pre>
+
+			
+			</div>
+			<div class="item singlypos1" style="display:none;">
+			<div class="title"><p>Doubbly Linkedlist</p>Insertion at position</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/Linked%20list/DOUBLY%20LINKED%20LIST/index.html'">
+					Let's visualize</button>
+				</div>
+
+<pre><p>Step 1:	Create a NODE SET newnode:= new NODE;</p></pre>
+<pre><p>Step 3:	SET newnode->data=element;</p></pre>
+<pre><p>Step 4:	SET temp:=head;</p></pre>
+<pre><p>Step 5:	IF((pos=0)&&(head==NULL))THEN</p></pre>
+<pre><p>		(i)	SET newnode->link:=NULL;</p></pre>
+<pre><p>		(ii)SET head:=newnode;</p></pre>
+<pre><p>     ELSE IF((pos=0)&&(head!=NULL))</p></pre>
+<pre><p>		(i)	newnode->link=head;</p></pre>
+<pre><p>		(ii)head:=newnode;</p></pre>
+<pre><p>     ELSE</p></pre>
+<pre><p>		(i)	REPEAT STEP FOR i=0 TO i<pos-1</p></pre>
+<pre><p>			SET temp:=temp->link;</p></pre>	
+<pre><p>			[END OF FOR]</p></pre>
+<pre><p>		(ii)IF(temp==NULL)THEN</p></pre>
+<pre><p>				WRITE: “Node in the list are less than position”</p></pre>
+<pre><p>			ELSE</p></pre>
+<pre><p>			(i)	SET newnode->link:=temp->link;</p></pre>
+<pre><p>			(ii)SET temp->link:=newnode;</p></pre>
+<pre><p>			[END OF IF]</p></pre>
+<pre><p>	[END OF IF]</p></pre>
+<pre><p>Step 6: Exit</p></pre>
+<pre><p> </p></pre>
+<pre><p> </p></pre>
+<pre><p>a.	Input: Node elements, position.</p></pre>
+<pre><p>b.	Process: Insert the node at the specific position of 
+the Doubly linked list.</p></pre>
+<pre><p>c.	Output: Displays the Doubly linked list with 
+time and space complexity.</p></pre>
+
+			</div>
+			<div class="item singlydelbeg1" style="display:none;">
+			<div class="title"><p>Doubbly Linkedlist</p>Deletion at beginning</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/Linked%20list/DOUBLY%20LINKED%20LIST/index.html'">
+					Let's visualize</button>
+				</div>
+				
+<pre><p>Step 1: IF(HEAD==NULL)THEN</p></pre>
+<pre><p>			WRITE:”LINKED LIST IS EMPTY”</p></pre>
+<pre><p>		ELSE</p></pre>
+<pre><p>			a)	SET ITEM:=HEAD->DATA</p></pre>
+<pre><p>			b)	WRITE:ITEM</p></pre>
+<pre><p>			c)	SET TEMP:=HEAD		</p></pre>							
+<pre><p>			d)	SET HEAD:=HEAD->RIGHT</p></pre>
+<pre><p>			e)	IF(HEAD!=NULL)THEN</p></pre>
+<pre><p>				i.	SET HEAD->LEFT:NULL</p></pre>
+<pre><p>			[END OF IF]</p></pre>
+<pre><p>			f)	DELETE(TEMP)</p></pre>
+<pre><p>		[END OF IF]</p></pre>
+<pre><p>Step 2: EXIT</p></pre>
+<pre><p> </p></pre>
+<pre><p> </p></pre>
+<pre><p>a.	Input: Node elements.</p></pre>
+<pre><p>b.	Process: Delete the node at the beginning of 
+the Doubly linked list.</p></pre>
+<pre><p>c.	Output: Displays the Doubly linked list with 
+time and space complexity.</p></pre>
+
+			
+				
+			</div>
+			<div class="item singlydelend1" style="display:none;">
+			<div class="title"><p>Doubbly Linkedlist</p>Deletion at end</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/Linked%20list/DOUBLY%20LINKED%20LIST/index.html'">
+					Let's visualize</button>
+				</div> 
+				
+<pre><p>Step 1: IF(HEAD==NULL)THEN</p></pre>
+<pre><p>			WRITE:”LINKED LIST IS EMPTY”</p></pre>
+<pre><p>		ELSE</p></pre>
+<pre><p>			a)	IF(HEAD->RIGHT!=NULL)THEN</p></pre>
+<pre><p>				i.	SET TEMP1:=HEAD</p></pre>
+<pre><p>				ii.	REPEAT WHILE(TEMP1->RIGHT!=NULL)</p></pre>
+<pre><p>					SET TEMP1:=TEMP1->RIGHT</p></pre>
+<pre><p>				[END OF WHILE]</p></pre>
+<pre><p>				b)	SET TEMP2:=TEMP1->LEFT</p></pre>
+<pre><p>				c)	SET TEMP2->RIGHT:NULL</p></pre>
+<pre><p>				d)	SET ITEM:=TEMP1->DATA</p></pre>
+<pre><p>				e)	WRITE:ITEM</p></pre>
+<pre><p>				f)	DELETE(TEMP1)</p></pre>
+<pre><p>			ELSE</p></pre>
+<pre><p>			i.	SET ITEM:=HEAD->DATA</p></pre>
+<pre><p>			ii.	WRITE:ITEM</p></pre>
+<pre><p>			iii.	DELETE(HEAD)</p></pre>
+<pre><p>			iv.	SET HEAD:=NULL</p></pre>
+<pre><p>			[END OF IF]</p></pre>
+<pre><p>		[END OF IF]</p></pre>
+<pre><p>Step 2: EXIT</p></pre>
+<pre><p> </p></pre>
+<pre><p> </p></pre>
+<pre><p>a.	Input: Node elements</p></pre>
+<pre><p>b.	Process: Delete the node at the end of the 
+Doubly linked list.</p></pre>
+<pre><p>c.	Output: Displays the Doubly linked list with 
+time and space complexity.</p></pre>
+
+				
+				
+			</div>
+			<div class="item singlydelpos1" style="display:none;">
+			<div class="title"><p>Doubbly Linkedlist</p>Deletion at specified position</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/Linked%20list/DOUBLY%20LINKED%20LIST/index.html'">
+					Let's visualize</button>
+				</div>
+
+<pre><p>Step 1:a.IF (head==NULL) THEN</p></pre>
+<pre><p>			WRITE: “Linked list is empty”</p></pre>
+<pre><p>		ELSE</p></pre>
+<pre><p>			a)	SET temp1: =NULL</p></pre>
+<pre><p>			b)	SET temp 2: =head;</p></pre>
+<pre><p>			c)	REPEAT STEP i & ii</p></pre> 
+<pre><p>			WHILE (temp2->link! =NULL)</p></pre>
+<pre><p>				(i)SET temp1: =temp2;</p></pre>
+<pre><p>				(ii)SET teemp2: =temp2->link;</p></pre>
+<pre><p>  			[END OF WHILE]</p></pre>
+<pre><p>			d)	WRITE: “deleted element is:” temp2->data;</p></pre>
+<pre><p>			e)	Delete(temp2);</p></pre>
+<pre><p>			f)	IF (temp1! =NULL) THEN</p></pre>
+<pre><p>					SET temp1->link: =NULL;</p></pre>
+<pre><p>				ELSE</p></pre>
+<pre><p>					SET head: =NULL;</p></pre>
+<pre><p>				[END OF IF]</p></pre>
+<pre><p>		[END OF IF]</p></pre>
+<pre><p>Step 2: Exit</p></pre>
+<pre><p> </p></pre>
+<pre><p> </p></pre>
+				
+				<pre><p>a.	Input: Element</p></pre>
+<pre><p>b.	Process: Delete the specific element of 
+the Doubly linked list.</p></pre>
+<pre><p>c.	Output: Displays the Doubly linked list with 
+time and space complexity.</p></pre>
+
+			</div>
+				<div class="item singlydelele1" style="display:none;">
+			<div class="title"><p>Singly Linkedlist</p>Deletion on element</div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///C:/final/Linked%20list/SINGLY%20LINKED%20LIST/index.html'">
+					Let's visualize</button>
+				</div>
+
+<pre><p>Step 1: a.IF(head==NULL)THEN</p></pre>
+<pre><p>			WRITE: “Linked list is empty”</p></pre>
+<pre><p>		ELSE</p></pre>
+<pre><p>			a)	SET temp1:=NULL</p></pre>
+<pre><p>			b)	SET temp2:=head;</p></pre>
+<pre><p>			c)	REPEAT STEP i & ii </p></pre>
+<pre><p>			WHILE(temp2->link!=NULL)</p></pre>
+<pre><p>			(i)SET temp1:=temp2;</p></pre>
+<pre><p>			(ii)SET teemp2:=temp2->link;</p></pre>
+<pre><p>     		[END OF WHILE]</p></pre>
+<pre><p>			d)	WRITE: “deleted element is:”temp2->data;</p></pre>
+<pre><p>			e)	Delete(temp2);</p></pre>
+<pre><p>			f)	IF(temp1!=NULL)THEN</p></pre>
+<pre><p>				g)	SET temp1->link:=NULL;</p></pre>
+<pre><p>			 ELSE</p></pre>
+<pre><p>				SET head:=NULL;</p></pre>
+<pre><p>			[END OF IF]</p></pre>
+<pre><p>		[END OF IF]</p></pre>
+<pre><p>Step 4: Exit</p></pre>
+			
+
+
+<pre><p></pre></p>
+<pre><p></pre></p>
+<pre><p>a.	Input: Element</p></pre>
+<pre><p>b.	Process: Delete the specific element of the 
+Singly linked list.</p></pre>
+<pre><p>c.	Output: Displays the Singly linked list with 
+time and space complexity.</p></pre>
+				
+			</div>
+			
+			
+			
+			
+			
+			
+			<!--................................................ Circular Linkedlist .......................................... 
+			
+			
+			
+			
+			
+			<div class="item singlybeg2">
+			<div class="title">Singly Linkedlist<p>Insertion at beginning</p></div>
+				<div class="item_info">
+					<div class="img"></div>
+					
+					<button type="button"onclick="location.href='file:///D:/project/New%20folder/SORTING%20final/Shell%20Sort/index.html'">
+					INSERTION</button>
+				</div>
+			<pre>	<p>gggggggggggggggggggggggggggStep 1: Set FOUND = 0</p></pre>
+			<pre>	<p>Step 2: Repeat Step 3 FOR i = 1 to n</p></pre>
+			<pre>	<p>Step 3: IF LA[i] = ITEM then</p></pre>
+			<pre>	<p>		a)set FOUND = 1</p></pre>
+			<pre>	<p>		b)set LOC = 1</p></pre>
+			<pre>	<p>		c)Go to Step 4</p></pre>
+			<pre>	<p>				[end of IF ]</p></pre>
+			<pre>	<p>			[end of FOR ]</p></pre>
+			<pre>	<p>Step 4: IF FOUND = 1 then</p></pre>
+			<pre>	<p>			WRRITE :"ITEM IS FOUND ": LOC</p></pre>
+			<pre>	<p>		ELSE</p></pre>
+			<pre>	<p>			WRRITE :"ITEM IS NOT FOUND"</p></pre>
+			<pre>	<p>Step 8: Exit</p></pre>	
+			</div>
+			<div class="item singlyend2" style="display:none;">
+			<div class="title">Singly Linkedlist<p>Insertion at end</p></div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///D:/project/New%20folder/SORTING%20final/Shell%20Sort/index.html'">
+					DELETION</button>
+				</div>
+			<pre>	<p>hhhhhhhhhhhhhhhhhhhhhhhhhStep 1: [Initialize segment variable]</p></pre>
+			<pre>	<p>			Set BEG = LB, END=UB and MID=INT(BEG+END/2)</p></pre>
+			<pre>	<p>Step 2: Repeat Step 3 and 4 WHILE BEG <= END </p></pre>
+			<pre>	<p>Step 3: IF ITEM IS < DATA[MID] then</p></pre>
+			<pre>	<p>			set END = MID -1</p></pre>
+			<pre>	<p>		ELSE IF ITEM = DATA[MID] then</p> </pre>
+			<pre>	<p>			set LOC = MID</p></pre>
+			<pre>	<p>		Goto Step 5</p></pre>
+			<pre>	<p>		ELSE </p></pre>
+			<pre>	<p>			set BEG = MID+1</p></pre>
+			<pre>	<p>				[end of IF ]</p></pre>
+			<pre>	<p>Step 4: set MID = INT(BEG+END/2)</p></pre>
+			<pre>	<p>				[end of step 2 loop ]</p></pre>
+			<pre>	<p>Step 5: IF DATA[MID]=ITEM then</p></pre>
+			<pre>	<p>			WRRITE :"ITEM IS FOUND ": LOC</p></pre>
+			<pre>	<p>		else</p></pre>
+			<pre>	<p>			set LOC = NULL</p></pre>
+			<pre>	<p>			WRRITE :"ITEM IS NOT FOUND"</p></pre>
+			<pre>	<p>		[end of IF ]</p></pre>
+			<pre>	<p>Step 8: Exit</p></pre>	
+			</div>
+			<div class="item singlypos2" style="display:none;">
+			<div class="title">Singly Linkedlist<p>Insertion at position</p></div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///D:/project/New%20folder/SORTING%20final/Shell%20Sort/index.html'">
+					INSERTION</button>
+				</div>
+			<p>iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii DDDDDDDDDDDDDDDDDsoftware requiby developers to achieve desired goals and also minimizes the</p>
+				<p>development cvents are evaluated.</p>
+				
+			</div>
+			<div class="item singlydelbeg2" style="display:none;">
+			<div class="title">Singly Linkedlist<p>Deletion at beginning</p></div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///D:/project/New%20folder/SORTING%20final/Shell%20Sort/index.html'">
+					DELETION</button>
+				</div>
+			<pre>	<p>jjjjjjjjjjjjjjjjjjjjjjjjjStep 1: Repeat Step 2 and Step 5 FOR i=1 to n</p></pre>
+			<pre>	<p>Step 2: set TEMP = A[i] </p></pre>
+			<pre>	<p>Step 3: Repeat Step 4 FOR j= i-1 to 1 by -1</p></pre>
+			<pre>	<p>Step 4: IF (A[j] > TEMP)</p></pre>
+			<pre>	<p>		set A[j+1]= A[j]</p></pre>
+			<pre>	<p>	else </p></pre>
+			<pre>	<p>		Goto Step 5</p></pre>
+			<pre>	<p>		[end of IF ]</p></pre>
+			<pre>	<p>			[end of FOR j ]</p></pre>
+			<pre>	<p>Step 5: set A[j+1]= TEMP</p></pre>
+			<pre>	<p>		[end of FOR i ]</p></pre>
+			<pre>	<p>Step 8: Exit</p></pre>
+				
+			</div>
+			<div class="item singlydelend2" style="display:none;">
+			<div class="title">Singly Linkedlist<p>Deletion at end</p></div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///D:/project/New%20folder/SORTING%20final/Shell%20Sort/index.html'">
+					INSERTION</button>
+				</div> 
+				<p>kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk DDDDDDDDDDDDDDDDDsoftware requiby developers to achieve desired goals and also minimizes the</p>
+				<p>development cvents are evaluated.</p>
+			</div>
+			<div class="item singlydelpos2" style="display:none;">
+			<div class="title">Singly Linkedlist<p>Deletion at position</p></div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///D:/project/New%20folder/SORTING%20final/Shell%20Sort/index.html'">
+					DELETION</button>
+				</div>
+				<p> lllllllllllllllllllllllllllllllllEEEEEEEEEEEEEEEEEEEEEEEsoftware requirements specification (SRS) is a comprehensive description of the intended purpose and environment for
+				software under development. The SRS fully describes what the software will do and how it will be expected to perform.
+				An SRS minimizes the time and effort required by developers to achieve desired goals and also minimizes the</p>
+				<p>development cost. A good SRS defines how an application will interact with system hardware, other programs and human users in a 
+				wide variety of real-world situations. Parameters such as operating speed, response time, availability, portability, maintainability, 
+				footprint, security and speed of recovery from adverse events are evaluated.</p>
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!--..............................................Doubly circular Linkedlist .......................................... --
+			
+			
+			
+			
+			<div class="item singlybeg3">
+			<div class="title">Singly Linkedlist<p>Insertion at beginning</p></div>
+				<div class="item_info">
+					<div class="img"></div>
+					
+					<button type="button"onclick="location.href='file:///D:/project/New%20folder/SORTING%20final/Shell%20Sort/index.html'">
+					INSERTION</button>
+				</div>
+			<pre>	<p>mmmmmmmmmmmmmmmmmmmmmStep 1: Set FOUND = 0</p></pre>
+			<pre>	<p>Step 2: Repeat Step 3 FOR i = 1 to n</p></pre>
+			<pre>	<p>Step 3: IF LA[i] = ITEM then</p></pre>
+			<pre>	<p>		a)set FOUND = 1</p></pre>
+			<pre>	<p>		b)set LOC = 1</p></pre>
+			<pre>	<p>		c)Go to Step 4</p></pre>
+			<pre>	<p>				[end of IF ]</p></pre>
+			<pre>	<p>			[end of FOR ]</p></pre>
+			<pre>	<p>Step 4: IF FOUND = 1 then</p></pre>
+			<pre>	<p>			WRRITE :"ITEM IS FOUND ": LOC</p></pre>
+			<pre>	<p>		ELSE</p></pre>
+			<pre>	<p>			WRRITE :"ITEM IS NOT FOUND"</p></pre>
+			<pre>	<p>Step 8: Exit</p></pre>	
+			</div>
+			<div class="item singlyend3" style="display:none;">
+			<div class="title">Singly Linkedlist<p>Insertion at end</p></div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///D:/project/New%20folder/SORTING%20final/Shell%20Sort/index.html'">
+					DELETION</button>
+				</div>
+			<pre>	<p>nnnnnnnnnnnnnnnnnnnnnStep 1: [Initialize segment variable]</p></pre>
+			<pre>	<p>			Set BEG = LB, END=UB and MID=INT(BEG+END/2)</p></pre>
+			<pre>	<p>Step 2: Repeat Step 3 and 4 WHILE BEG <= END </p></pre>
+			<pre>	<p>Step 3: IF ITEM IS < DATA[MID] then</p></pre>
+			<pre>	<p>			set END = MID -1</p></pre>
+			<pre>	<p>		ELSE IF ITEM = DATA[MID] then</p> </pre>
+			<pre>	<p>			set LOC = MID</p></pre>
+			<pre>	<p>		Goto Step 5</p></pre>
+			<pre>	<p>		ELSE </p></pre>
+			<pre>	<p>			set BEG = MID+1</p></pre>
+			<pre>	<p>				[end of IF ]</p></pre>
+			<pre>	<p>Step 4: set MID = INT(BEG+END/2)</p></pre>
+			<pre>	<p>				[end of step 2 loop ]</p></pre>
+			<pre>	<p>Step 5: IF DATA[MID]=ITEM then</p></pre>
+			<pre>	<p>			WRRITE :"ITEM IS FOUND ": LOC</p></pre>
+			<pre>	<p>		else</p></pre>
+			<pre>	<p>			set LOC = NULL</p></pre>
+			<pre>	<p>			WRRITE :"ITEM IS NOT FOUND"</p></pre>
+			<pre>	<p>		[end of IF ]</p></pre>
+			<pre>	<p>Step 8: Exit</p></pre>	
+			</div>
+			<div class="item singlypos3" style="display:none;">
+			<div class="title">Singly Linkedlist<p>Insertion at position</p></div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///D:/project/New%20folder/SORTING%20final/Shell%20Sort/index.html'">
+					INSERTION</button>
+				</div>
+			<p>ooooooooooooooooooooo DDDDDDDDDDDDDDDDDsoftware requiby developers to achieve desired goals and also minimizes the</p>
+				<p>development cvents are evaluated.</p>
+				
+			</div>
+			<div class="item singlydelbeg3" style="display:none;">
+			<div class="title">Singly Linkedlist<p>Deletion at beginning</p></div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///D:/project/New%20folder/SORTING%20final/Shell%20Sort/index.html'">
+					DELETION</button>
+				</div>
+			<pre>	<p>ppppppppppppppppppppppppppppppppppStep 1: Repeat Step 2 and Step 5 FOR i=1 to n</p></pre>
+			<pre>	<p>Step 2: set TEMP = A[i] </p></pre>
+			<pre>	<p>Step 3: Repeat Step 4 FOR j= i-1 to 1 by -1</p></pre>
+			<pre>	<p>Step 4: IF (A[j] > TEMP)</p></pre>
+			<pre>	<p>		set A[j+1]= A[j]</p></pre>
+			<pre>	<p>	else </p></pre>
+			<pre>	<p>		Goto Step 5</p></pre>
+			<pre>	<p>		[end of IF ]</p></pre>
+			<pre>	<p>			[end of FOR j ]</p></pre>
+			<pre>	<p>Step 5: set A[j+1]= TEMP</p></pre>
+			<pre>	<p>		[end of FOR i ]</p></pre>
+			<pre>	<p>Step 8: Exit</p></pre>
+				
+			</div>
+			<div class="item singlydelend3" style="display:none;">
+			<div class="title">Singly Linkedlist<p>Deletion at end</p></div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///D:/project/New%20folder/SORTING%20final/Shell%20Sort/index.html'">
+					INSERTION</button>
+				</div> 
+				<p> qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqDDDDDDDDDDDDDDDDDsoftware requiby developers to achieve desired goals and also minimizes the</p>
+				<p>development cvents are evaluated.</p>
+			</div>
+			<div class="item singlydelpos3" style="display:none;">
+			<div class="title">Singly Linkedlist<p>Deletion at position</p></div>
+				<div class="item_info">
+					<div class="img"></div>
+					<button type="button"onclick="location.href='file:///D:/project/New%20folder/SORTING%20final/Shell%20Sort/index.html'">
+					DELETION</button>
+				</div>
+				<p> rrrrrrrrrrrrrrrrrrrrrrrrEEEEEEEEEEEEEEEEEEEEEEEsoftware requirements specification (SRS) is a comprehensive description of the intended purpose and environment for
+				software under development. The SRS fully describes what the software will do and how it will be expected to perform.
+				An SRS minimizes the time and effort required by developers to achieve desired goals and also minimizes the</p>
+				<p>development cost. A good SRS defines how an application will interact with system hardware, other programs and human users in a 
+				wide variety of real-world situations. Parameters such as operating speed, response time, availability, portability, maintainability, 
+				footprint, security and speed of recovery from adverse events are evaluated.</p>
+			</div>--->
+			
+			
+			
+			
+			
+			
+			
+			
+		 </div>
+	</div>
+</div>
+
+
+<script src="algorithm.js"></script>
+</body>
+</html>

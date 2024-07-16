@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body style="background-color:black;">
+	<br />
+<!--BUTTON CODE <- AND ->-->
+<div class="nextprev">
+<ul>
+	<!--<li class="prev"><a href="file:///C:/final/AA-Home/statpage.html"><span><a href="file:///C:/final/AA-Home/statpage.html"></a></span></li>-->
+	<li class="prev"><a href="file:///C:/final/Algorithm-final/2ARRAY/algorithm.html"><span><a href="file:///C:/final/Algorithm-final/2ARRAY/algorithm.html"></a></span></li>
+	<li class="next"><a href="file:///C:/final/Array%20Operation/INSERT/index.html"><span><a href="file:///C:/final/Array%20Operation/INSERT/index.html"></a></span></li> 
+	
+</ul>
+</div>
+<!--BUTTON CODE <- AND ->-->
+
+	<p class="header" style="text-shadow:2px 2px #1B5FAA;color:#1B5FAA;font-size:50px;font-family: Lucida Console, Courier New, monospace;">ARRAY DELETION</p>
+
+
+	<div id="array"></div>
+	<br /><br />
+
+<div style="text-align: center;color:#1B5FAA;font-size:30px;font-family: Lucida Console, Courier New, monospace;">
+	<label for="fname1">
+		Array:
+	</label>
+	<input type="text" id="fname1" name="fname1" style="background-color:#1B5FAA;width:400px;height:30px;color:white;font-size:30px;font-family: Lucida Console, Courier New, monospace;" onkeypress="return onlyNumberKeySpace(event)" autofocus </input>
+	<br /><br />
+
+	<div style="text-align: center;color:#1B5FAA;font-size:30px;font-family: Lucida Console, Courier New, monospace;">
+	<label for="fname">
+		Number to be Delete:
+	</label>
+	<input type="text" id="fname" name="fname" style="background-color:#1B5FAA;width:400px;height:30px;color:white;font-size:30px;font-family: Lucida Console, Courier New, monospace;" onkeypress="return onlyNumberKey(event)" </input>
+	<br /><br />
+	<button id="btn" class="button button1"
+			onclick="LinearSearch()">Delete
+	</button>
+	
+	<button id="btn1" class="button button2"
+			onclick="generatearray()">Generate
+	</button>
+	<button id="btn2" class="button button3"
+			onclick="Reset()" >Reset
+	</button>
+	<button id="btn3" class="button button4"
+			onclick="TimeComplexity()" >TimeComplexity
+	</button>
+	<button id="btn4" class="button button5"
+			onclick="SpaceComplexity()" >SpaceComplexity
+	</button>
+	
+	<br />
+	<br />
+	<div id="text"></div>
+	<div id="text1" style="text-align:right;color:#0492C2;font-size:30p;"></div>
+	<div id="text2" style="text-align:right;color:#0492C2;font-size:30px;"></div>
+	<div id="text3" style="text-align:right;color:#0492C2;font-size:30px;"></div>
+	<div id="text4" style="text-align:right;color:#0492C2;font-size:30px;"></div>
+	</div>
+<script>
+function onlyNumberKey(evt) {
+              
+            // Only ASCII character in that range allowed
+            var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+            if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+                return false;
+            return true;
+        }
+    </script>
+
+<script>
+        function onlyNumberKeySpace(evt) {
+              
+            // Only ASCII character in that range allowed
+            var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+            if (ASCIICode != 32 && (ASCIICode < 48 || ASCIICode > 57) )
+                return false;
+            return true;
+        }
+    </script>
+	<script src="script.js"></script>
+</body>
+</html>
